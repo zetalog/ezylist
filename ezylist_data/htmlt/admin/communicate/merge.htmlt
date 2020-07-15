@@ -1,0 +1,28 @@
+<script language="JavaScript">
+<!--
+
+	function writeIt() {
+        
+		var select = window.document.merge_form.mergefields;
+		var index = select.selectedIndex;
+		var field = select.options[index].text;
+		var field = '~' + field + '~';
+		window.document.email_form.contents.value += field;
+                                
+	}
+-->
+</script>
+
+<table border=0 width=90%><tr>
+	<td valign=top align=left><font face="arial" size=2>
+	To add your member's personal information into the e-mail message, select one of the merge 
+	fields from the box to the right.  This will automatically add the merge field into the message.
+	</font></td>
+
+	<td valign=top align=left><font face="arial" size=2>
+	<form name="merge_form" onSubmit="return false;">
+	<select name="mergefields" size="4" onChange="writeIt();">!;
+		~userfield_options~
+	</select></form></font></td>
+</tr></table>
+

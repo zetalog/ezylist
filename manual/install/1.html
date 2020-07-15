@@ -1,0 +1,59 @@
+
+<html>
+<head>
+	<title>User Manual - eZyList Pro v1.0 - Created by eZyScripts.Com</title>
+</head>
+
+<body>
+<center><font face="times new roman" size=5><b>eZyList Pro v1.0</b></font><br>
+<font face="arial" size=2><b>Created by Lv 'Zetalog' Zheng of <a href="http://www.ezyscripts.com/">eZyScripts.Com</a></b></font><br>
+</center><br><br>
+
+<font face="arial" size=3><b>Location of Perl</b></font><br><br>
+
+<blockquote><font face="arial" size=2>
+The first thing you need to do is make sure the location of Perl on your server in every script 
+is correct.  Right now, the location to Perl in all scripts is set to <b>/usr/bin/perl</b>.  If the 
+location to Perl on your server is the same, you can go ahead and proceed to the next step of the 
+installation procedure.
+
+<br><br>
+
+If you do not know the location of Perl on your server, follow these steps to find out:
+<br><ol>
+	<li>Telnet into your server.
+	<li>At the telnet prompt, type <b>which perl</b>.  The location of Perl 
+	should be printed to the screen.
+	<li>If that didn't print anything, type <b>whereis perl</b>.  The location of Perl
+	should be printed to the screen.
+	<li>If that didn't print anything, please contact your server administrator and ask for the 
+	location of Perl on your server.
+</ol>
+
+However, if the location of Perl on your server is different, you must open up the following files
+in a text editor like Notepad, and change the very first line to the location of Perl on your server.  
+When doing this, make sure you leave the <b>#!</b> at the beginning of the first line.  Here's a list 
+of the files you will need to change:
+<br><ul>
+	<li>cgi-bin/error.cgi
+	<li>cgi-bin/followup.pl
+	<li>cgi-bin/install.cgi
+	<li>cgi-bin/newuser.cgi
+	<li>cgi-bin/process.pl
+	<li>cgi-bin/reminder.cgi
+	<li>cgi-bin/subscribe.cgi
+	<li>cgi-bin/update.pl
+	<li>cgi-bin/admin/admin.cgi
+	<li>cgi-bin/cpanel/index.cgi
+</ul><br>
+
+To continue with the installation, please click on the <i>Next</i> button below.
+</font></blockquote><br>
+
+<center><font face="verdana" size=3><b>
+<a href="index.html">&lt; Prev</a> | 
+<a href="2.html">Next &gt;</a>
+</b></font></center>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<HEADER>
+<TABLE_HEADER View Entry>
+<form action="~script_name~?menu=lists&action=edit2" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+<input type="hidden" name="id" value="~entry_id~">
+
+<FONT_BODY>
+From here you can view the selected entry from the mailing list, <b>~listname~</b>.  Below is the 
+current information on the selected entry.  You may edit or delete the entry by clicking on the 
+appropriate button below.
+</font><br><br><LINE>
+
+<FONT_HEADER Entry Information>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Entry ID#:</font></td>
+	<td nowrap><FONT_BODY>~entry_id~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Next Follow Up Date:</font></td>
+	<td nowrap><FONT_BODY>~nextdate~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Message Sent on Next Follow Up:</font></td>
+	<td nowrap><FONT_BODY>~next_message~</font></td>
+</tr>
+
+<REPRODUCE listfield listinfo>
+<tr>
+	<td nowrap><FONT_BODY>~listfield_titlecase~:</font></td>
+	<td nowrap><FONT_BODY>~listinfo~</font></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" name="submit" value="Edit Entry">
+<input type="submit" name="submit" value="Delete Entry">
+</font></center><br>
+
+<FOOTER>
+
+

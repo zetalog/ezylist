@@ -1,0 +1,35 @@
+<HEADER>
+<TABLE_HEADER Create Mailing List>
+<form action="~script_name~?menu=lists&action=create" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="action" value="create">
+
+<FONT_BODY>
+From here you can create a new mailing list for any member in your database.  To continue, please 
+answer the two following questions.
+</font><br><br><LINE>
+
+<FONT_HEADER List Information>
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Name of Mailing List:</font></td>
+	<td nowrap><input type="text" name="listname" size=30></td>
+</tr></table><br>
+
+<FONT_BODY>How many fields would you like the new mailing list to contain?  For example, if 
+you wanted to store subscriber's name, e-mail address and phone number, you would enter 3 in 
+the field.</font><br>
+
+<blockquote><FONT_BODY>Number of Fields:</font><input type="text" name="fieldnum" size=6></blockquote><br>
+
+
+<center><FONT_BODY>
+<input type="submit" value="Create Mailing List">
+<input type="reset" value="Reset Form">
+</font></center>
+
+<FOOTER>
+

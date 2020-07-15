@@ -1,0 +1,94 @@
+<HEADER>
+<TABLE_HEADER Manage Mailing List>
+<form action="~script_name~?menu=lists&action=edit2" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+
+<FONT_BODY>
+From here you can manage the selected mailing list.  You may add, edit, delete, view and search entries from 
+the mailing list.  You may add a new entry to the list by entering the information below.  You may 
+edit or delete an entry in your mailing list by entering the ID# or e-mail address of the entry below.  
+If you do not know the ID# or e-mail address, you may search the mailing list using by entering the 
+needed info below.
+</font><br><br><LINE>
+
+<FONT_HEADER List Information>
+<FONT_BODY>
+Below shows information on the selected mailing list.  You can not edit any of this information, and 
+it is for reference only.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List Name:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Subscribers:</font></td>
+	<td nowrap><FONT_BODY>~subscribers~</font></td>
+</tr></table></blockquote><br>
+
+
+<FONT_HEADER Add Entry>
+<FONT_BODY>
+From here you may add a new entry to the mailing list.  To do this, please enter the information 
+for the new entry below, and click on the <i>Add Entry</i> button below to save the changes.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<REPRODUCE listfield>
+<tr>
+	<td nowrap><FONT_BODY>~listfield_titlecase~:</font></td>
+	<td nowrap><input type="text" name="add_~listfield~" size=30></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" name="submit" value="Add Entry">
+</font></center><br><br>
+
+<FONT_HEADER Edit, Delete or View Entry>
+<FONT_BODY>
+From here you can edit, delete, or view any entry in the mailing list.  To do so, please enter 
+either the ID# or e-mail address of the entry, and click on the appropriate submit button below.  
+If you do not know the ID# or e-mail address, you may search the mailing list below.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>ID# or E-Mail Address:</font></td>
+	<td nowrap><input type="text" name="id" size=25></td>
+</tr></table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" name="submit" value="Edit Entry">
+<input type="submit" name="submit" value="Delete Entry">
+<input type="submit" name="submit" value="View Entry">
+</font></center><br><br>
+
+<FONT_HEADER Search List>
+<FONT_BODY>
+From here you can search the entire mailing list for some specified text.  This can be used 
+if you want to edit, delete or view an entry, but do not know the ID# or e-mail address.  To 
+search the mailing list, enter the text below which you would like to search for.  All fields 
+left blank will be omitted from the search.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<REPRODUCE listfield>
+<tr>
+	<td nowrap><FONT_BODY>~listfield_titlecase~:</font></td>
+	<td nowrap><input type="text" name="search_~listfield~" size=25></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" name="submit" value="Search Entry">
+</font></center><br>
+
+<FOOTER>
+

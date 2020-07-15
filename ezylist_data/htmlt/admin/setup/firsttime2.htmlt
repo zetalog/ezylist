@@ -1,0 +1,146 @@
+<HEADER>
+<TABLE_HEADER First Time Setup - Part 2>
+<form action="~script_name~?menu=setup&action=firsttime2" method="POST">
+<input type="hidden" name="userfields" value="~userfields~">
+<input type="hidden" name="domains" value="~domains~">
+
+<FONT_BODY>
+First Time Setup is used to setup your entire program for the first time.  From here you will 
+create your member database, and specify many options.  To continue, please complete the following form.
+
+<br><br>
+
+<font color="#CC0000"><b>NOTE:</b></font> Do NOT run First Time Setup if you currently have member's in your database.  
+If you have member's in your database, please delete them all by going to <i>Setup->Other</i>, before 
+running First Time Setup.
+</font><br><br><LINE>
+
+<FONT_HEADER Database Information>
+
+<FONT_BODY>
+In the below fields, please enter the names of the fields you would like for your 
+member database.  The field names can not contain spaces or special characters.  A 
+few examples of field names are, <i>name, email, phone, password, class</i>.
+
+<br><br><blockquote>
+<table border=0 cellspacing=1 cellpadding=2 width=100%>
+
+<REPRODUCE field_num>
+<tr>
+	<td valign=top nowrap><FONT_BODY>Field ~field_num~:</font></td>
+	<td valign=top nowrap><input type="text" name="field~field_num~" size=30></td>
+</tr>
+</REPRODUCE>
+</table>
+</blockquote></font><br>
+
+
+<FONT_HEADER Domain Information>
+
+<FONT_BODY>
+In the below fields, please enter the domain names which you would like your member's 
+to be able to create auto responders with.  Please do NOT include <i>www.</i> at the beginning 
+of the domain names.
+
+<br><br><blockquote>
+<table border=0 cellspacing=1 cellpadding=2 width=100%>
+
+<REPRODUCE domain_num>
+<tr>
+	<td valign=top nowrap><FONT_BODY>Domain Name ~domain_num~:</font></td>
+	<td valign=top nowrap><FONT_BODY>username@</font> <input type="text" name="domain~domain_num~" size=30></td>
+</tr>
+</REPRODUCE>
+</table>
+</blockquote></font><br>
+
+<IF sendmail>
+	<FONT_HEADER E-Mail Information>
+
+	<FONT_BODY><b>Question 1:</b></font><br><br>
+	<FONT_BODY>
+	In the box below, please enter the full path on your server to Sendmail.  If you do 
+	not know this, please contact your server administrator.
+	
+	<br><br><blockquote>
+	Full Path to Sendmail:</font> <input type="text" name="mailprog" size=30 value="/usr/sbin/sendmail">
+	</blockquote></font><br>
+</IF>
+
+<IF smtp>
+	<FONT_HEADER E-Mail Information>
+
+	<FONT_BODY><b>Question 1:</b></font><br><br>
+	<FONT_BODY>
+	In the box below, please enter the address of your SMTP mail server.  If you do not know this, 
+	please contact your server administrator.
+	
+	<br><br><blockquote>
+	SMTP Server:</font> <input type="text" name="mailprog" size=30 value="mail.yourdomain.com">
+	</blockquote></font><br>
+</IF>
+
+<IF dns>
+	<FONT_HEADER E-Mail Information>
+
+	<FONT_BODY><b>Question 1:</b></font><br><br>
+	<FONT_BODY>
+	In the box below, pleae enter one of the name servers of your web hosting provider.  
+	If you do not know this, please ask your server administrator.
+	
+	<br><br><blockquote>
+	Name Server:</font> <input type="text" name="mailprog" size=30 value="ns.yourhostsdomain.com">
+	</blockquote></font><br>
+</IF>
+
+<IF mysql>
+	<FONT_HEADER Database Information>
+
+	<FONT_BODY><b>Question 1:</b></font><br><br>
+	<FONT_BODY>
+	In the box below, please enter the MySQL database informations.  If you do 
+	not know this, please contact your server administrator.
+	</font>
+	
+	<br><br>
+	<blockquote>
+	<FONT_BODY>
+	eZyList database name:</font> <input type="text" name="dbname" size=30 value="ezylist">
+	</blockquote></font>
+	<blockquote>
+	<FONT_BODY>
+	MySQL database host:</font> <input type="text" name="dbhost" size=30 value="localhost">
+	</blockquote></font>
+	<blockquote>
+	<FONT_BODY>
+	MySQL database username:</font> <input type="text" name="dbuser" size=30 value="root">
+	</blockquote></font>
+	<blockquote>
+	<FONT_BODY>
+	MySQL database user password:</font> <input type="text" name="dbpassword" size=30 value="">
+	</blockquote></font>
+	<br>
+</IF>
+
+<IF backup>
+	<FONT_HEADER Automatic Update Information>
+
+	<FONT_BODY><b>Question 1:</b></font><br><br>
+	<FONT_BODY>
+	How often would you like the script to automatically backup all member information?
+	
+	<br><br><blockquote>
+	<input type="radio" name="backup_interval" value="daily" checked>daily<br>
+	<input type="radio" name="backup_interval" value="weekly">weekly<br>
+	<input type="radio" name="backup_interval" value="biweekly">biweekly<br>
+	<input type="radio" name="backup_interval" value="monthly">monthly<br>			
+	</blockquote></font><br>
+</IF>
+
+<LINE><center>
+<input type="submit" value="Proceed to Next Step">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+

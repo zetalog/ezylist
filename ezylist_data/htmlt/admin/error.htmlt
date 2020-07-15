@@ -1,0 +1,32 @@
+
+<html>
+<head>
+	<title>ERROR - ~SCRIPT_TITLE~ v~SCRIPT_VERSION~</title>
+</head>
+
+<body>
+<table border=2 cellspacing=2 cellpadding=1 bgcolor="#BBBBBB" align=center width=70%>
+<tr>
+	<td width=100%><center>
+
+	<br><font face="verdana" size=3 color="#000000"><b>Error ~err_code~</b></font>
+	<br><br>
+	
+	<hr width=90%>
+
+	<br><FONT_BODY>~err_message~<br><br>
+	<FONT_BODY>
+	<b>Reason For Error:</b> ~err_reason~<br>
+	<b>How To Fix Error:</b> ~err_fixit~<br><br>
+
+	<hr width=90%><br>
+
+	<i>File:</i> ~err_file~<br>
+	<i>Line:</i> ~err_line~<br><br>
+	</font>
+
+	</center></td>
+</tr></table>
+
+</body>
+</html>

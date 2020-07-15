@@ -1,0 +1,21 @@
+<HEADER>
+<TABLE_HEADER Create Mailing List>
+<form action="~script_name~?menu=lists&action=create3" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="listname" value="~listname~">
+<input type="hidden" name="fieldnum" value="~fieldnum~">
+<input type="hidden" name="listfields" value="~listfields~">
+
+<FONT_BODY>
+In the below select box, please select which field of your new mailing list will contain your 
+subscribers e-mail addresses and names, if any.  Once done, click on the <i>Create Mailing List</i> button to 
+create the new mailing list.
+<br><br><blockquote>
+	Field containing e-mail addresses: </font><select name="email_field">~listfield_options~</select><br><br>
+	
+	Field containing names: </font><select name="name_field"><option value="">No Name Field~listfield_options~</select>
+</blockquote><br>
+
+<center><FONT_BODY><input type="submit" value="Create Mailing List"></font></center><br>
+
+<FOOTER>

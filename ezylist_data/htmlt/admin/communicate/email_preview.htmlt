@@ -1,0 +1,31 @@
+<HEADER>
+<TABLE_HEADER E-Mail Members - Preview Message>
+<form action="~script_name~?menu=communicate&action=email2" method="POST">
+<input type="hidden" name="_FROM_NAME" value="~_FROM_NAME~">
+<input type="hidden" name="_FROM_ADDR" value="~_FROM_ADDR~">
+<IF emailall>
+<input type="hidden" name="c1" value="~c1~">
+<input type="hidden" name="c2" value="~c2~">
+</IF>
+<IF notify>
+<input type="hidden" name="username" value="~username~">
+</IF>
+
+<FONT_BODY>
+Below is a copy of the message which will be sent out to all 
+of the members in your database.  If you need to make any changes to 
+the message, press the Back button on your browser.  When your ready 
+to send the message, click on the <i>Send E-Mail</i> button at the bottom.
+</font><br><LINE>
+
+<FONT_BODY>
+<b>From: </b> ~_FROM_NAME~ &lt;~_FROM_ADDR~&gt;<br>
+<b>Subject: </b> ~subject~<br><br>
+
+~contents~
+
+<br><LINE>
+
+<center><input type="submit" value="Send E-Mail"></center>
+
+<FOOTER>

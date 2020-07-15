@@ -1,0 +1,56 @@
+<HEADER>
+<TABLE_HEADER View Follow Up Logs>
+
+<FONT_BODY>
+Below is a list of all errors which occured when follow ups were sent 
+out on the selected date.  Depending on the error which occured, some entries 
+may have been automatically removed from the mailing list.  The field named <b>Removed</b> 
+tells you if the entry has been removed from the mailing list or not.
+</font><br><br><LINE>
+
+<FONT_HEADER Follow Up Error Log>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Date:</font></td>
+	<td nowrap><FONT_BODY>~date~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Total Errors:</font></td>
+	<td nowrap><FONT_BODY>~total_errors~</font></td>
+</table></blockquote><br><br>
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+	<td align=left width=30% nowrap><FONT_BODY>
+	<IF prev><a href="~script_name~?menu=followup&action=viewlogs2&username=~username~&listid=~list_id~,~days~&start=~start_previous~">&lt; Previous</a> | </IF>
+	<IF next><a href="~script_name~?menu=followup&action=viewlogs2&username=~username~&listid=~list_id~,~days~&start=~start_next~">Next &gt;</a></IF>
+	</font></td>
+
+	<td align=right width=70% nowrap><FONT_BODY> <b>Quick Jump:</b> | ~jumplinks~</font></td> 
+</tr></table>
+
+<table border=1 cellspacing=2 cellpadding=2 width=100%>
+<tr bgcolor="#F0F0F0">
+	<th><FONT_BODY>ID#</font></th>
+	<th><FONT_BODY>Error Message</font></th>
+	<th><FONT_BODY>Message Name</font></th>
+	<th><FONT_BODY>Cycle</font></th>
+
+<REPRODUCE listfield>
+	<th><FONT_BODY>~listfield_titlecase~</font></th>
+</REPRODUCE></tr>
+
+<REPRODUCE list_entry>
+<tr>
+	~list_entry~
+</tr>
+</REPRODUCE>
+</table><br><br>
+
+<FOOTER>
+

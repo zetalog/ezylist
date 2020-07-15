@@ -1,0 +1,19 @@
+<HEADER>
+<TABLE_HEADER ~SCRIPT_TITLE~ v~SCRIPT_VERSION~>
+
+<table border=2 cellspacing=2 cellpadding=1 bgcolor="#BBBBBB" align=center width=70%>
+<tr>
+	<td width=100%><center>
+	<font face="verdana" size=3 color="#000000"><b>Success</b></font><br>
+	<hr width=90%><br>
+			
+	<FONT_BODY>~success_message~
+	<br><br>
+
+	</center></td>
+</tr></table>
+<FONT_BODY><blockquote>
+
+</font></blockquote>
+
+<FOOTER>

@@ -1,0 +1,22 @@
+
+<table border=1 cellspacing=1 cellpadding=2 width=90% align=center>
+<tr bgcolor="#A3A9B7">
+	<th width=100% colspan=4>
+	<font face="verdana" size=3">Current Advertisements</font></th>
+</tr>
+<tr bgcolor="#F0F0F0">
+	<th>&nbsp;</th>
+	<th><FONT_BODY>Advertisement Name</font></th>
+	<th><FONT_BODY>Displayed</font></th>
+	<th><FONT_BODY>Clicked</font></th>
+</tr>
+<REPRODUCE ad_id ad_name ad_displayed ad_clicked>
+<tr>
+	<th nowrap><input type="radio" name="ad_id" value="~ad_id~"></th>
+	<td nowrap><FONT_BODY>~ad_name~</font></td>
+	<td nowrap><FONT_BODY>~ad_displayed~</font></td>
+	<td nowrap><FONT_BODY>~ad_clicked~</font></td>
+</tr>
+</REPRODUCE>
+</table><br>
+

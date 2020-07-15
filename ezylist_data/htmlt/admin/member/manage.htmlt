@@ -1,0 +1,43 @@
+<HEADER>
+<TABLE_HEADER ~title~>
+
+<FONT_BODY>
+Below is a list of all matched members currently in your database.  
+Please select one of the members below, and click on the 
+<i>Submit</i> button at the bottom of the page.
+</font><br><br>
+
+<form action="~script_name~?~query_string~" method="POST">
+<input type="hidden" name="step" value="display">
+<table border=1 cellspacing=1 cellpadding=2 width=90% align=center>
+<tr bgcolor="#A3A9B7">
+	<th width=100% colspan=6>
+	<font face="verdana" size=3>Members</font></th>
+</tr><tr bgcolor="#F0F0F0">
+	<th><FONT_BODY>ID#</font></th>
+	<th><FONT_BODY>Name</font></th>
+	<th><FONT_BODY>E-Mail Address</font></th>
+	<th><FONT_BODY>Status</font></th>
+	<th><FONT_BODY>Type</font></th>
+	<th>&nbsp;</th>
+</tr>
+<REPRODUCE rusername rname remail rstatus rtype>
+<tr>
+	<td><FONT_BODY><a href="~script_name~~interrogation~module=main&menu=member&action=edit&username=~rusername~">~rusername~</a></font></td>
+	<td><FONT_BODY>~rname~</font></td>
+	<td><FONT_BODY><a href="mailto:~remail~">~remail~</a></font></td>
+	<td><FONT_BODY>~rstatus~</font></td>
+	<td><FONT_BODY>~rtype~</font></td>
+	<th><input type="radio" name="username" value="~rusername~"></th>
+</tr>
+</REPRODUCE>
+</tr></table><br><br>
+
+<LINE>
+<center>
+<REPRODUCE action>
+<input type="submit" name="action" value="~action~">
+</REPRODUCE>
+</center>
+
+<FOOTER>

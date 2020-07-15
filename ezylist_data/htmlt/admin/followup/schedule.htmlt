@@ -1,0 +1,91 @@
+<HEADER>
+<TABLE_HEADER Schedule Mailings>
+<form action="~script_name~?menu=followup&action=schedule" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+<input type="hidden" name="action" value="getlist">
+
+<FONT_BODY>
+From here you can manage your scheduled mailings.  Scheduled mailings allow you to set an exact 
+date to send an e-mail message to the selected mailing list.  You may add a new scheduled mailing 
+by filling out the form below, and clicking on the <i>Add Schedule</i> button.  You may also edit 
+or delete any of the current schedules by selecting the schedule from below, and clicking on the 
+appropriate submit button below.
+</font><br><br><LINE>
+
+<FONT_HEADER Current Scheduled Mailings>
+<blockquote><table border=0 cellspacing=1 cellpadding=2>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr></table></blockquote><br>
+	
+<FONT_BODY>
+Below are the mailings which are scheduled for the selected 
+mailing list.  You may edit or delete any of the below mailings 
+by selecting the appropriate mailing, and clicking on either the 
+<i>Edit Mailing</i> or <i>Delete Mailing</i> submit button.
+</font><br><br>
+
+<blockquote><table border=1 cellspacing=1 cellpadding=2 width=90%>
+<tr bgcolor="#A3A9B7">
+	<th width=100% colspan=3>
+	<font face="Times New Roman" size=3>Current Scheduled Mailings</font></th>
+</tr><tr bgcolor="#F0F0F0">
+	<th>&nbsp;</th>
+	<th><FONT_BODY>Date Scheduled</font></th>
+	<th><FONT_BODY>Message Name</font></th>
+</tr>
+<REPRODUCE mailid mail_date message_name>
+<tr>
+	<th nowrap><input type="radio" name="mailid" value="~mailid~"></th>
+	<td nowrap><FONT_BODY>~mail_date~</font></td>
+	<td nowrap><FONT_BODY>~message_name~</font></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" name="submit" value="Edit Mailing">
+<input type="submit" name="submit" value="Delete Mailing">
+</font></center><br><br>
+
+<FONT_HEADER Add Mailing>
+<FONT_BODY>
+To add a new scheduled mailing, please select the date you would like the mailing 
+to be sent, and enter the e-mail message in the text box below.  Once done, click on the 
+<i>Add Mailing</i> button to save the changes.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=2>
+<tr>
+	<td nowrap><FONT_BODY>Mailing Date:</font></td>
+	<td nowrap><FONT_BODY>~maildate_html~</font></td>
+</tr><tr>
+	<td colspan=2 width=100% align=center><FONT_BODY><br><br>
+	<input type="checkbox" name="_html" value="1">
+	Check this box if your message contains HTML<br><br>
+	</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Name of Message:</font></td>
+	<td valign=top><input type="text" name="name" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Subject:</font></td>
+	<td valign=top><input type="text" name="subject" size=35></td>
+</tr><tr>
+	<td valign=top colspan=2 width=100%><br><br>
+	<FONT_BODY>Please type the message contents below:</font><br>
+	<textarea name="contents" rows=12 cols=50 wrap="virtual"></textarea>
+	</td>
+</tr></table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" name="submit" value="Add Mailing">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+

@@ -1,0 +1,23 @@
+<HEADER>
+<TABLE_HEADER ~page_title~>
+<form action="~script_name~?~query_string~" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="action" value="getmsg">
+
+<FONT_BODY>
+This action requires an e-mail message.  To continue, please 
+select one of the e-mail messages from below.
+</font><br><br><LINE>
+
+
+<REPRODUCE listname listmsg>
+	<FONT_BODY><b>~listname~</b></font><br>
+	<blockquote><FONT_BODY>
+		~listmsg~
+	</font></blockquote><br>
+</REPRODUCE>
+
+<LINE>
+
+<center><FONT_BODY><input type="submit" value="Select Message"></font></center>
+<FOOTER>

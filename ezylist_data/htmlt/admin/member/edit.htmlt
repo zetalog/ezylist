@@ -1,0 +1,82 @@
+<HEADER>
+<TABLE_HEADER Edit Member>
+<form action="~script_name~?menu=member&action=edit" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="action" value="edit">
+<input type="hidden" name="step" value="submit">
+
+<FONT_BODY>
+From here you can edit any member in your database.  Below is the selected member's current information.  
+Feel free to change any of the information below, and once done, click on the <i>Edit Member</i> button 
+to save the changes.
+
+<IF moptions1>
+<br><br>
+To change your member's password, just delete the <i>&lt;--ENCRYPTED--&gt;</i> text from the Password 
+text box, and enter the new password.
+</IF>
+
+</font><br><br><LINE>
+
+<FONT_HEADER Member Profile>
+<FONT_BODY>
+The below fields show the member's current profile.  Feel free to make any needed changes 
+to the information below.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr>
+<REPRODUCE userfield userinfo>
+<tr>
+	<td nowrap><FONT_BODY>~userfield_titlecase~:</font></td>
+	<td nowrap><input type="text" name="~userfield~" value="~userinfo~" size=30></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<FONT_HEADER Additional Information>
+<FONT_BODY>
+This section asks for some additional information, such as how many autoresponders and mailing lists
+the member is allowed to have.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=1>
+<tr>
+	<td valign=top nowrap><FONT_BODY><b>1.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many autoresponders is the member allowed to have?</font></td>
+	<td valign=top width=20%><input type="text" name="_add_autonum" size=5 value="~add_arnum~"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>2.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many mailing lists, not including one for each autoresponder, 
+	is the member allowed to create?</font></td>
+	<td valign=top width=20%><input type="text" name="_add_listnum" size=5 value="~add_listnum~"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>3.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many follow up e-mail messages autoresponder, is the member allowed to create?</font></td>
+	<td valign=top width=20%><input type="text" name="_add_msgnum" size=5 value="~add_msgnum~"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>4.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many follow up cycles is the member allowed to have for each mailing list?</font></td>
+	<td valign=top width=20%><input type="text" name="_add_cyclenum" size=5 value="~add_cyclenum~"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>5.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many mailings would you like to all the member to have 
+	scheduled at one time?</font></td>
+	<td valing=top width=20%><input type="text" name="_add_maxsch" size=5 value="~add_maxsch~"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>6.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>What the is maximum number of e-mail messages the member is 
+	allowed to send to the mailing lists, in one day?</font></td>
+	<td valing=top width=20%><input type="text" name="_add_maxmsg" size=8 value="~add_maxnum~"></td>
+</tr></table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Edit Member">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+

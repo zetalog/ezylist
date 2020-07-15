@@ -1,0 +1,31 @@
+<HEADER>
+<TABLE_HEADER E-Mail Member(s)>
+
+<FONT_BODY>
+From here, you can choose to send email to one or all members here and can choose to send a custom email message or system
+ (pre-stored) message.  To do this, you may determine by choosing from the criteria below.
+</font><br><br>
+
+<form action="~script_name~?menu=communicate&action=email" method="POST" name="email_form">
+<input type="hidden" name="step" value="getaction">
+<FONT_BODY>Please select which members would like to e-mail.  
+You can choose system or custom message to e-mail single member, or to all members in your database.
+</font><br><br>
+
+<blockquote>
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+	<td valign=top><FONT_BODY>
+	<input type="radio" name="action" value="emailall" checked>Email all member<br>
+	<input type="radio" name="action" value="notify">Notify member<br>
+	</font></td>
+</tr></table></blockquote>
+
+<br><LINE>
+
+<center><FONT_BODY>
+<input type="submit" value="Submit">
+</font></center><br>
+
+<FOOTER>
+

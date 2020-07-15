@@ -1,0 +1,31 @@
+<HEADER>
+
+<TABLE_HEADER ~SCRIPT_TITLE~ v~VERSION~ - Admin Control Panel>
+<FONT_HEADER Welcome ~admin_name~>
+
+<blockquote><FONT_BODY>
+Welcome to the Admin Control Panel for the ~SCRIPT_TITLE~ v~VERSION~, created by <a href="http://www.ezyscripts.com/">eZyScripts.Com</a>.
+The ~SCRIPT_TITLE~ allows you to easily create and maintain your own database of members, each with multiple mailing lists 
+and autoresponders, which will automatically send personalized e-mail follow up messages at set intervals.
+
+<br><br>
+To continue, please click on one of the menu links in the top left corner of the screen to expand the menu. 
+</font></blockquote><br>
+
+<FONT_HEADER System Summary>
+<blockquote><FONT_BODY>
+The system has ~total_member~ members, includes ~ml_member~ mailers and ~ad_member~ advertisers.
+<br><br>
+~messages~ communicates have been created by ~SCRIPT_TITLE~ or administrotors.
+<br>
+~advertisments~ advertisements have been created by advertisers.
+<br><br>
+This system has sent ~mail_sent~ by ~time~ on ~date~.
+<br><br>
+This system is currently running as ~dbdriver~ database mode and ~mailtype~ mailing mode.
+<br>
+You can change this feature by choosing setup actions in the setup menu.
+</font></blockquote><br>
+
+<FOOTER>
+

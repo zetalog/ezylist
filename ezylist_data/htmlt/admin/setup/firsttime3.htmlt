@@ -1,0 +1,66 @@
+<HEADER>
+<TABLE_HEADER First Time Setup - Part 3>
+<form action="~script_name~?menu=setup&action=firsttime3" method="POST">
+
+<FONT_BODY>
+First Time Setup is used to setup your entire program for the first time.  From here you will 
+create your member database, and specify many options.  To continue, please complete the following form.
+
+<br><br>
+
+<font color="#CC0000"><b>NOTE:</b></font> Do NOT run First Time Setup if you currently have member's in your database.  
+If you have member's in your database, please delete them all by going to <i>Setup->Other</i>, before 
+running First Time Setup.
+</font><br><br><LINE>
+
+<FONT_HEADER Database Information>
+
+<FONT_BODY><b>Question 1:</b></font><br><br>
+<FONT_BODY>
+Please select which field in your member database contains your member's names.
+
+<br><br><blockquote>
+Name Field: <select name="dbfields0">
+~userfield_options~
+</select>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 2:</b></font><br><br>
+<FONT_BODY>
+Please select which field in your member database contains your member's e-mail addresses.
+
+<br><br><blockquote>
+E-Mail Address Field: <select name="dbfields1">
+~userfield_options~
+</select>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 3:</b></font><br><br>
+<FONT_BODY>
+Please select which field in your member database contains your member's passwords.
+
+<br><br><blockquote>
+Password Field: <select name="dbfields2">
+~userfield_options~
+</select>
+</blockquote></font><br>
+
+<FONT_HEADER Edit Profile Information>
+
+<FONT_BODY>
+From the list below, please check which userfields your member's 
+are allowed to edit from the Member Control Panel.
+
+<br><br><blockquote>
+<REPRODUCE field>
+	<input type="checkbox" name="edit_fields" value="~field~">~field~<br>
+</REPRODUCE>
+</blockquote></font><br>
+
+<center><hr width=80%><br><FONT_BODY>
+<input type="submit" value="Proceed to Next Step">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+

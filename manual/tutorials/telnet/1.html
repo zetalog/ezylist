@@ -1,0 +1,68 @@
+
+<html>
+<head>
+	<title>User Manual - Web Site Replicator v1.0 - Created by eZyScripts.Com</title>
+</head>
+
+<body>
+<center><font face="times new roman" size=5><b>Web Site Replicator v1.0</b></font><br>
+<font face="arial" size=2><b>Created by Lv 'Zetalog' Zheng of <a href="http://www.ezyscripts.com/">eZyScripts.Com</a></b></font><br>
+</center><br><br>
+
+<font face="arial" size=3><b>Telnet Tutorial - Moving Around your Server</b></font><br><br>
+
+<blockquote><font face="arial" size=2>
+You should now be logged into your web server and staring at the telnet prompt.  Think of the telnet prompt like 
+the MS-DOS prompt.  In telnet, just as in DOS, if you type something like <tt>cd html</tt> you will change directories to 
+the <tt>html</tt> directory.
+
+<br><br>
+	
+Let's start out by learning a few basic UNIX commands.  First, open up your FTP client and login to your web server.  Now, 
+look at your FTP client, and take notice of all of the files and directories you currently see.  Now, at the telnet prompt,
+type <tt>ls</tt>.  This will display all of the files and directories in the directory you are currently in.  You should see the 
+exact same files and directories in telnet, as you do in your FTP client.  For me, when I type <tt>ls</tt> I get the following:
+	
+<blockquote><tt><pre>
+bash-2.01$ 	ls
+Counter         cgi             httpd           list.txt
+SSL             html            images
+bash-2.01$ 
+</pre></tt></blockquote>
+	
+Next, with your FTP client, change directories to any directory you want, and take notice of the files and directories which your FTP client show.
+At the telnet prompt, type <tt>cd DIRNAME</tt>.  Remember to replace <tt>DIRNAME</tt> with the name of the directory you just changed to with your FTP 
+client.  For example, if you changed to the directory <tt>html</tt> with your FTP client, you would type <tt>cd html</tt> at your telnet prompt.
+
+<br><br>
+	
+Now, type <tt>ls</tt> at the telnet prompt again.  Once again, you should see the exact same files and directories in your FTP client as you do in telnet.  
+On my telnet screen, I see the following:
+	
+<blockquote><tt><pre>
+bash-2.01$ cd html
+bash-2.01$ ls
+cartsnap        goldstats       links           login.html      scripts
+email.html      index.html      list.cgi        members         vsa
+bash-2.01$ 
+</pre></tt></blockquote>
+	
+Just a quick note.  In telnet, when you type <tt>ls</tt>, you will NOT see any files or directories which start with a period, like
+<tt>.vsaconfig .hidden.file</tt>.  However, with your FTP client you probably will see these files and directories.  If you do want to
+see the files which start with a period in telnet, all you have to do is type <tt>ls -a</tt> at the telnet prompt.  That <tt>-a</tt> means
+ALL.
+
+<br><br>
+
+If you would like to change directories one level up (go backwards a directory), type <tt>cd ..</tt>  You can go ahead and close your FTP
+client now.  This was just to help you familiarize yourself with the telnet prompt, and help you understand 
+how to move around your web server in telnet.
+</font></blockquote><br>
+
+<center><font face="verdana" size=3><b>
+<a href="index.html"> &lt; Prev</a> | 
+<a href="2.html"> Next &gt;</a>
+</b></font></center>
+
+</body>
+</html>

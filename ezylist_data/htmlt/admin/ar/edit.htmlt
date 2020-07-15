@@ -1,0 +1,60 @@
+<HEADER>
+<TABLE_HEADER Edit Auto Responder>
+<form action="~script_name~?menu=ar&action=edit2" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="ar" value="~ar~">
+
+<FONT_BODY>
+From here you can edit the selected auto responder.  Below you may change the mailing list 
+which the auto responder is attached to, and the forwarding e-mail address.  You may also 
+edit the auto-reply which is sent out by the auto responder below.  Once you have made all 
+necessary changes to the form below, please click on the <i>Edit Auto Responder</i> button 
+below, to save the changes.
+
+<br><br>
+
+You may change the attachment of the auto responder, by selecting the new attachment from below.
+</font><br><br><LINE>
+
+<FONT_HEADER Auto Responder Information>
+<blocquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Auto Responder:</font></td>
+	<td nowrap><FONT_BODY>~ar~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Current Attachment:</font></td>
+	<td nowrap><FONT_BODY>~attachfile~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List Attached To:</font></td>
+	<td nowrap><select name="listid">~list_options~</select></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Forwarding E-Mail Address:<br>(leave blank if none)</font></td>
+	<td nowrap><input type="text" name="forward" value="~forward~" size=25></td>
+</tr></table></blockquote><br>
+
+<FONT_HEADER Auto-Reply Message>
+<table border=0 cellspacing=2 cellpadding=1 width=100%>
+<tr>
+	<td colspan=2 width=100% align=center><FONT_BODY>
+	<input type="checkbox" name="_html" value="1" ~html_check~>
+	Check this box if your message contains HTML<br><br>
+	</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Subject:</font></td>
+	<td valign=top><input type="text" name="subject" value="~subject~" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Attachment:</font></td>
+	<td valign=top><input type="file" name="attachment" size=35></td>
+</tr><tr>
+	<td valign=top colspan=2 width=100%><br><br>
+	<FONT_BODY>Please type the message contents below:</font><br>
+	<textarea name="contents" rows=12 cols=50 wrap="virtual">~contents~</textarea>
+	</td>
+</tr></table><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Edit Auto Responder"> 
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>

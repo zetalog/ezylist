@@ -1,0 +1,29 @@
+<HEADER>
+<TABLE_HEADER First Time Setup - Successful>
+
+<FONT_BODY>
+First Time Setup of your program has been successfully completed.  You may 
+now begin adding members to your database by going to <i>Database->Create New Member</i>.
+
+<br><br>
+
+Thank you for choosing the eZyList Pro for your mailing list needs.
+
+<IF cron>
+<br><br>
+In order for the automated features of the eZyList Pro to work, you must 
+load your crontab file.  To do this, follow these simple steps:
+
+<br><br><blockquote><ol>
+	<li>Telnet into your web server
+	<li>Type <tt>cd ~datadir~</tt>
+	<li>Type <tt>crontab ezylist.cron</tt>
+</ol></blockquote><br>
+
+If you do not receive an error message, your crontab file has been successfully loaded.  
+All automated features will now work in the eZyList Pro.
+</font><br>
+</IF>
+
+<FOOTER>
+

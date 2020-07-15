@@ -1,0 +1,28 @@
+
+$style{'FONT_HEADER'} = q!<font face="verdana" size=2><b>~1~</b></font><br><br>!;
+
+$style{'TABLE_HEADER'} = q!
+<table border=0 cellspacing=0 cellpadding=0>
+<tr>
+	<td colspan=5 valign=top colspan=3 bgcolor="#000000"><img src="~GIF_URL~/spacer.gif" height=1px width=1px border=0></td>
+</tr>
+<tr>
+	<td valign=top><img src="~GIF_URL~/line.gif" width=1px height=20px border=0></td>
+	<td bgcolor="#A3A9B7"><img src="~GIF_URL~/spacer.gif" width=2px height=1px border=0></td>
+	<td bgcolor="#A3A9B7" nowrap><font face="verdana" size=2><b>~1~</b></font></td>
+	<td bgcolor="#A3A9B7"><img src="~GIF_URL~/spacer.gif" width=2px height=1px border=0></td>
+	<td valign=top><img src="~GIF_URL~/line.gif" width=1px height=20px border=0></td>
+</tr>
+<tr>
+	<td colspan=5 valign=top colspan=3 bgcolor="#000000"><img src="~GIF_URL~/spacer.gif" height=1px width=1px border=0></td>
+</tr>
+</table><br>
+!;
+
+$style{'FONT_BODY'} = q!<font face="verdana" style="font-size:8pt">!;
+
+$style{'LINE'} = q!<center><hr width=90%></center><br>!;
+
+$style{'FOOTER'} = q!</td></tr></table></form></body></html>!;
+
+1;

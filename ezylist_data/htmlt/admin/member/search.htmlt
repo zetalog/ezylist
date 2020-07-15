@@ -1,0 +1,55 @@
+<HEADER>
+<TABLE_HEADER Search All Members>
+
+<form action="~script_name~?menu=member&action=search" method="POST">
+
+<FONT_BODY>
+From here, you can search all of the members in your database.  To continue, 
+please enter your search criteria below.  Any fields left blank will be omitted 
+from the search.
+</font><br><br><LINE>
+
+<FONT_HEADER Search Criteria>
+<FONT_BODY>Please select which members you would like to search.  
+You can choose to search active or inactive members.
+</font><br><blockquote>
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+	<td><FONT_BODY><b>Member Status<br><br></b></font></td>
+	<td><FONT_BODY><b>Member Type<br><br></b></font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>
+	<input type="radio" name="_criteria1" value="all" checked>All members<br>
+	<input type="radio" name="_criteria1" value="active">Active members only<br>
+	<input type="radio" name="_criteria1" value="inactive">Inactive members only<br>
+	</font></td>
+	<td valign=top><FONT_BODY>
+	<input type="radio" name="_criteria2" value="all" checked>All members<br>
+	<input type="radio" name="_criteria2" value="registered">Registered mailer only<br>
+	<input type="radio" name="_criteria2" value="unregistered">Unregistered mailer only<br>
+	<input type="radio" name="_criteria2" value="advertiser">Advertiser only<br>
+	</font></td>
+</tr></table></blockquote><br>
+
+<FONT_HEADER Search Text>
+<FONT_BODY>Please enter the text you would like to search 
+your member database for in to the fields below.  Any fields 
+left blank will be omitted from the search.
+</font><br><blockquote>
+
+<table border=0 cellspacing=2 cellpadding=0 width=100%>
+<REPRODUCE userfield>
+<tr>
+	<td><FONT_BODY>~userfield_titlecase~:</font></td>
+	<td><input type="text" name="~userfield~" size=30></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<LINE>
+
+<center><input type="submit" value="Perform Search">
+<input type="reset" value="Clear Form"></center>
+
+<FOOTER>

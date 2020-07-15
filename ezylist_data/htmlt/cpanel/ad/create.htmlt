@@ -1,0 +1,47 @@
+<HEADER>
+<TABLE_HEADER Create Advertisement>
+
+<FONT_BODY>
+From here you can create a new advertisement for the selected member.  The new advertisment can 
+then be added to the unregistered member's follow up messages.  To continue, please type the
+contents of the advertisement into the text area below.  You may also add an image for this
+advertisement by selecting the file from your computer below.
+
+<br><br>
+
+<form name="ad_form" action="~script_name~?menu=ad&action=create" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="step" value="submit">
+
+<table border=0 cellspacing=2 cellpadding=1 width=100%>
+<tr>
+	<td colspan=2 width=100% align=center><FONT_BODY>
+	<input type="checkbox" name="_swf" value="1">
+	Check this box if your "image" is a shockwave flash movie<br><br>
+	</font></td>
+</tr><tr>
+	<td colspan=2 width=100% vlign=top><FONT_BODY>
+	Note: Shockwave flash may not be displayed correctly in the clients' MUA.<br><br>
+	</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Name of Advertisement:</font></td>
+	<td valign=top><input type="text" name="name" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Link:</font></td>
+	<td valign=top><input type="text" name="link" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Image:</font></td>
+	<td valign=top><input type="file" name="image" size=35></td>
+</tr><tr>
+	<td valign=top colspan=2 width=100%><br><br>
+	<FONT_BODY>Please type the advertisement contents below:</font><br>
+	<textarea name="contents" rows=12 cols=50 wrap="virtual"></textarea>
+	</td>
+</tr></table><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Create Advertisement"> 
+<input type="reset" value="Clear Fields">
+</font></center><br>
+
+<FOOTER>

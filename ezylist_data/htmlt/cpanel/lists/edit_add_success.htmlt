@@ -1,0 +1,35 @@
+<HEADER>
+<TABLE_HEADER Add New Entry - Successful>
+<form action="~script_name~?menu=lists&action=edit" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+<input type="hidden" name="action" value="getlist">
+
+<FONT_BODY>
+The following entry has been successfully added to the mailing list, <b>~listname~</b>.  The 
+follow up cycle will now automatically begin on this new entry.
+</font><br><br><LINE>
+
+<FONT_HEADER Entry Information>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Entry ID#:</font></td>
+	<td nowrap><FONT_BODY>~entry_id~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Next Follow Up Date:</font></td>
+	<td nowrap><FONT_BODY>~next_date~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Message Sent at Next Follow Up:</font></td>
+	<td nowrap><FONT_BODY>~next_message~</font></td>
+</tr>
+<REPRODUCE listfield listinfo>
+<tr>
+	<td nowrap><FONT_BODY>~listfield_titlecase~:</font></td>
+	<td nowrap><FONT_BODY>~listinfo~</font></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<center><FONT_BODY><input type="submit" value="Back to Manage Mailing List"></font></center><br>
+
+<FOOTER>

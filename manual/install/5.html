@@ -1,0 +1,52 @@
+
+<html>
+<head>
+	<title>User Manual - eZyList Pro v1.0 - Created by eZyScripts.Com</title>
+</head>
+
+<body>
+<center><font face="times new roman" size=5><b>eZyList Pro v1.0</b></font><br>
+<font face="arial" size=2><b>Created by Lv 'Zetalog' Zheng of <a href="http://www.ezyscripts.com/">eZyScripts.Com</a></b></font><br>
+</center><br><br>
+
+<font face="arial" size=3><b>Create the .forward file</b></font><br><br>
+
+<blockquote><font face="arial" size=2>
+The last thing you need to do is create the .forward file on your server.  The .forward file is used by Sendmail, 
+and will redirect all unrouted e-mail to the auto responder script.  
+
+<br><br>
+
+First, you have to make sure all unrouted e-mail is going to your home directory.  You currently have a system e-mail account, which is 
+usually located at <i>username@domain.com</i>.  For example, if you own the domain <i>joesmith.com</i>, your system mailbox is probably 
+<i>joesmith@joesmith.com</i>.  You MUST make sure all unrouted e-mail is being sent to your system mailbox.  If your web host offers dump e-mail 
+accounts, or allows you to specify a default e-mail address, please make sure this is set to your system mailbox.  If it is not, the auto responders 
+will not work.
+
+<br><br>
+
+Once you have made sure all unrouted e-mail is being delivered to your system mailbox, you need to create your .forward file.  To do this, please follow 
+these steps:
+
+<br><blockquote><ol>
+	<li>Telnet into your server.
+	<li>Stay in the directory you first enter.  Do NOT change directories.
+	<li>Determine the full path to the <i>process.pl</i> script on your server.  This is in 
+		your /cgi-bin/ directory when you uploaded the script.
+	<li>At the prompt, type <tt>echo "|/full/path/to/process.pl" &gt; .forward</tt>
+	<li>Of course, replace <tt>/full/path/to/process.pl</tt> with the full path to the process.pl script on your server.  
+		Make sure you leave the | mark at the beginning.
+	<li>Next, just chmod the .forward file to 755		
+</ol></blockquote><br>
+
+Your .forward file should now be successfully created.  All auto responder functions should now work perfectly on your 
+server.
+</font></blockquote><br>
+
+<center><font face="verdana" size=3><b>
+<a href="4.html">&lt; Prev</a> | 
+<a href="6.html"> Next &gt;</a>
+</b></font></center>
+
+</body>
+</html>

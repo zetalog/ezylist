@@ -1,0 +1,72 @@
+<HEADER>
+<TABLE_HEADER Import Mailing List>
+<form action="~script_name~?menu=lists&action=import" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="action" value="getlist">
+<input type="hidden" name="action2" value="import">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+
+<FONT_BODY>
+From here you can import a mailing list, by simply uploading a text file.  Every entry imported 
+into the mailing list will be scheduled for the first follow up cycle.  The below table shows 
+exactly how the format of your text file MUST be.
+</font><br><br><LINE>
+
+<FONT_HEADER Text File Format>
+
+<FONT_BODY>
+Your text file must contain several columns, tab delimited or delimited by some other character.  
+The below table shows what each column of your text delimited file, must contain.
+</font><br><br>
+
+<blockquote><table border=1 cellspacing=1 cellpadding=2 width=60%>
+<tr>
+	<th nowrap bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">Column Number</font></font></th>
+	<th nowrap bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">Mailing List Field</font></font></th>
+</tr>
+<REPRODUCE colnum coldesc>
+<tr>
+	<td nowrap align=center><FONT_BODY>~colnum~</font></td>
+	<td nowrap><FONT_BODY>~coldesc~</font></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<FONT_BODY><b>Example File:</b><br>
+<blockquote>~example_file~</blockquote></font><br><br>
+
+<FONT_HEADER Import Mailing List>
+
+<FONT_BODY>
+In the below fields, please select what your text file is delimited by.  This is how the script 
+will seperate the columns.  Also, please select the text file to import, from your computer.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr><tr>
+	<td nowrap valign=top><FONT_BODY>Database Delimiter:</font></td>
+	<td nowrap valign=top><FONT_BODY>
+		<input type="radio" name="delim" value="tab" checked>Tab<br>
+		<input type="radio" name="delim" value="other"> Other: </font>
+		<input type="text" name="delim_other" size=5><br>
+	</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>File to Import:</font></td>
+	<td nowrap><input type="file" name="importfile" size=30></td>
+</tr></table></blockquote><br><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Import Mailing List">
+<input type="reset" value="Clear Form">
+</font></center><br><br>
+
+<FOOTER>
+
+
+

@@ -1,0 +1,23 @@
+
+<HEADER>
+<TABLE_HEADER Other>
+<form action="~script_name~?menu=setup&action=other" method="POST">
+
+<FONT_BODY>
+From here you can perform several miscellaneous functions.  These functions are listed here because 
+they do not belong in any other category.  To continue, please select the action you would like to perform 
+from the list below, and click on the <i>Perform Action</i> button below.
+</font>
+
+<br><br><LINE><FONT_BODY>
+
+<blockquote>
+	<input type="radio" name="action" value="delete">Delete all member's currently in your database<br>
+</blockquote><br>
+
+<LINE>
+<center><FONT_BODY>
+<input type="submit" value="Perform Action"> 
+</center><br>
+
+<FOOTER>

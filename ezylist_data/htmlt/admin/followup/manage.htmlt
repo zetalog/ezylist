@@ -1,0 +1,70 @@
+<HEADER>
+<TABLE_HEADER Manage Follow Ups>
+<form action="~script_name~?menu=followup&action=manage2" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+
+<FONT_BODY>
+From here you can manage the times and intervals at which e-mail messages are sent to the 
+subscribers of the selected mailing list.  If wanted, you can also set a welcome message for the 
+mailing list, which will be automatically sent to the subscriber when they are added to the 
+mailing list.
+</font><br><br><LINE>
+
+<FONT_HEADER Mailing List Info>
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr></table></blockquote><br>
+
+<FONT_HEADER Current Follow Up Settings>
+<FONT_BODY>
+Below are the the current follow up settings for the selected mailing list.  When a new 
+subscriber is added to the mailing list, the below follow up settings will automatically start.
+</font><br><br>
+
+<blockquote><table border=1 cellspacing=1 cellpadding=2 width=80%>
+<tr bgcolor="#A3A9B7">
+	<th width=100% colspan=2>
+	<font face="verdana" size=3>Current Follow Up Settings</font></th>
+</tr><tr bgcolor="#F0F0F0">
+	<th>&nbsp;</th>
+	<th><FONT_BODY>Follow Up Cycle</font></th>
+</tr><tr>
+	<th nowrap>&nbsp;</th>
+	<td><FONT_BODY>A new subscriber is added to the mailing list~welcome_html~</font></td>
+</tr>
+
+<REPRODUCE followup_id followup_cycle>
+<tr>
+	<th nowrap><input type="radio" name="followup_id" value="~followup_id~"></th>
+	<td><FONT_BODY>~followup_cycle~</font></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" name="submit" value="Edit Follow Up Cycle">
+<input type="submit" name="submit" value="Delete Follow Up Cycle">
+</font></center><br><br>
+
+<FONT_HEADER Add Follow Up Cycle>
+<FONT_BODY>
+You may add a new cycle to the current follow up settings by completing the following 
+form.  The new cycle will be automatically added to your current follow up settings.  This 
+will also be sent to all current subscribers of the mailing list, at the correct time.
+</font><br><br>
+
+<blockquote>
+<input type="text" name="days" size=5> <FONT_BODY> days after the previous follow up cycle, 
+send the </font> <select name="message">~message_options~</select> <FONT_BODY> e-mail message 
+to the subscriber.
+</font></blockquote><br>
+
+<center><FONT_BODY><input type="submit" name="submit" value="Add Follow Up Cycle"></font></center>
+
+<FOOTER>

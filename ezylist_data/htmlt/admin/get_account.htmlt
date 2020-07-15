@@ -1,0 +1,35 @@
+<HEADER>
+<TABLE_HEADER ~title~>
+
+<form action="~script_name~?~query_string~" method="POST">
+<input type="hidden" name="step" value="getmember">
+<table border=2 cellspacing=2 cellpadding=1 bgcolor="#BBBBBB" align=center width=80%>
+<tr>
+	<td width=100%><center>
+	<font face="verdana" size=3 color="#000000"><b>Choose a Member</b></font><br>
+	<hr width=90%><br>
+			
+	<FONT_BODY>
+	This action requires the username of a member.  To continue, 
+	please enter the username of a member in the text box below.
+	<br><br>
+	
+	<b>Username: </b></font> <input type="text" name="username" size=20><br>
+	<hr width=90%><br>
+	
+	<table border=0 cellspacing=0 cellpadding=0 width=100%>
+	<tr>
+		<td width=20% align=center valign=middle><input type="checkbox" name="display_all_accounts" value="1"></td>
+		<td><FONT_BODY>
+		You may view a list of all the members currently in your database, by checking the 
+		box to the left, and clicking on the <i>Submit</i> button.
+		</font></td>
+	</tr></table>
+
+	<br><hr width=90%><br>
+	
+	<input type="submit" value="Submit">
+	</center></td>
+</tr></table>
+
+<FOOTER>

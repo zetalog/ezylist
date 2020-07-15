@@ -1,0 +1,48 @@
+<HEADER>
+<form action="~script_name~?menu=setup&action=export" method="POST">
+<TABLE_HEADER Export Database>
+
+<FONT_BODY>
+From here you can export your entire member database into a text delimited database.  You can 
+then import the results into your favorite database program such as Microsoft Access or Microsoft Excel.  
+Due to security reasons, the results will NOT be saved on a file anywhere on your server.  Instead, the results 
+will be sent to the e-mail address provided below.  To continue, please fill out the following form.
+</font>
+
+<br><br><LINE>
+
+<FONT_HEADER Database Delimiter>
+<FONT_BODY>
+Please choose a database delimiter below.  The delimiter is the character(s) which will seperate the database 
+fields in the text delimited database.
+
+<br><blockquote>
+	<input type="radio" name="delimiter" value="tab" checked>Tab<br>
+	<input type="radio" name="delimiter" value="other">Other Character(s) 
+	<input type="text" name="other_delimiter" size=5><br>
+</blockquote></font>
+
+<FONT_HEADER E-Mail Results To>
+<FONT_BODY>
+In the box below, please enter the e-mail address which you would like the results 
+sent to.  Remember, the results will NOT be stored in any file on your server.  They will only 
+be e-mailed to the e-mail address entered below.
+
+<br><blockquote>
+	E-Mail Results To:</font> <input type="text" name="email" size=30><br>
+</blockquote></font>
+
+<FONT_HEADER Additional Information>
+<FONT_BODY>
+You may include other information other than member's profiles in the results.  Please check all 
+of the information below which you would like to include in the results.
+<br><blockquote>
+	<input type="checkbox" name="additional0" value="status">Member Status<br>
+	<input type="checkbox" name="additional1" value="type">Member Type<br>
+</blockquote></font>
+
+<LINE>
+<FONT_BODY><input type="submit" value="Export Database">
+</center><br>
+
+<FOOTER>

@@ -1,0 +1,85 @@
+<HEADER>
+<TABLE_HEADER E-Mail Member(s)>
+
+<FONT_BODY>
+From here, you can send a personalized e-mail message to all of the 
+members currently in your database.  To do this, please complete the following 
+form.  You may select which member status you would like to e-mail by 
+choosing from the criteria below.
+</font><br><br>
+
+<LINE>
+<include merge.htmlt>
+<LINE>
+
+<form action="~script_name~?menu=communicate&action=email" method="POST" name="email_form">
+<input type="hidden" name="step" value="editmsg">
+<input type="hidden" name="_notify" value="~_notify~">
+<input type="hidden" name="_emailall" value="~_emailall~">
+<input type="hidden" name="username" value="~username~">
+
+<IF notify>
+<blockquote>
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+	<td><FONT_BODY><b>Reception: ~username~<br><br></b></font></td>
+</tr><tr>
+</tr></table></blockquote>
+<br><LINE>
+</IF>
+
+<IF emailall>
+<FONT_BODY>Please select which members you would like to e-mail.  
+You can choose to e-mail active or inactive members, or all members in your database.</font><br><br>
+
+<blockquote>
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+	<td><FONT_BODY><b>Member Status<br><br></b></font></td>
+	<td><FONT_BODY><b>Member Type<br><br></b></font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>
+	<input type="radio" name="c1" value="all" checked>All members<br>
+	<input type="radio" name="c1" value="active">Active members only<br>
+	<input type="radio" name="c1" value="inactive">Inactive members only<br>
+	</font></td>
+	<td valign=top><FONT_BODY>
+	<input type="radio" name="c2" value="all" checked>All members<br>
+	<input type="radio" name="c2" value="unregistered">Unregistered mailer only<br>
+	<input type="radio" name="c2" value="registered">Registered mailer only<br>
+	<input type="radio" name="c2" value="advertiser">Advertiser only<br>
+	</font></td>
+</tr></table></blockquote>
+
+<br><LINE>
+</IF>
+
+<table border=0 cellspacing=2 cellpadding=1 width=100%>
+<tr>
+	<td colspan=2 width=100% align=center><FONT_BODY>
+	<input type="checkbox" name="_html" value="1" ~html~>
+	Check this box if your message contains HTML<br><br>
+	</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Your Full Name:</font></td>
+	<td valing=top><input type="text" name="_FROM_NAME" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Your E-Mail Address:</font></td>
+	<td valign=top><input type="text" name="_FROM_ADDR" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Subject:</font></td>
+	<td valign=top><input type="text" name="subject" value="~subject~" size=35></td>
+</tr><tr>
+	<td valign=top colspan=2 width=100%><br><br>
+	<FONT_BODY>Please type the message contents below:</font><br>
+	<textarea name="contents" rows=12 cols=50 wrap="virtual">~contents~</textarea>
+	</td>
+</tr></table><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Preview Message"> 
+<input type="reset" value="Clear Fields">
+</font></center><br>
+
+<FOOTER>
+

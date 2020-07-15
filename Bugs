@@ -1,0 +1,7 @@
+
+09/22/2002 Mike Lee
+  The cut off the account name longer than 8 characters for the mysql storage, this will cause
+  inaccessible account directories.
+
+10/18/2002 Mike Lee
+  Error occurs when sign up a new member with notification for the administrator or the member.

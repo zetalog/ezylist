@@ -1,0 +1,24 @@
+<HEADER>
+<TABLE_HEADER ~title~>
+<script language="Javascript">
+		function refresh() {
+			window.document.location = "~script_name~?action=processing";
+		}
+
+		setTimeout('refresh()', 4000);
+</script>
+
+<table border=2 cellspacing=2 cellpadding=1 bgcolor="#BBBBBB" align=center width=80%>
+<tr>
+	<td width=100% align=center> 
+	<font face="times new roman" size=4 color="#000000"><b>Processing</b></font><br>
+	<hr width=90%><br>
+			
+	<FONT_BODY>~process_message~<br>
+	<b>~percent~ % Complete</b><br>
+	<img src="~gif_url~/bluebar.gif" height=10 width=~bar_width~ border=0>
+	<br><br></font></td>
+</tr></table>
+	
+
+<FOOTER>

@@ -1,0 +1,45 @@
+
+<HEADER>
+
+<FONT_BODY>
+You have selected to send a custom e-mail message.  To continue, please fill out the following form 
+and once done, click on the <i>Send Mail</i> button below to send the message.  This message will 
+not be saved anywhere on your server for future use.
+</font><br><br>
+
+<LINE>
+<include merge.htmlt>
+<LINE>
+
+<form action="~script_name~?~query_string~" method="POST" name="email_form">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="message" value="Custom Message">
+
+<table border=0 cellspacing=2 cellpadding=1 width=100%>
+<tr>
+	<td colspan=2 width=100% align=center><FONT_BODY>
+	<input type="checkbox" name="_html" value="1">
+	Check this box if your message contains HTML<br><br>
+	</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Your Full Name:</font></td>
+	<td valing=top><input type="text" name="_FROM_NAME" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Your E-Mail Address:</font></td>
+	<td valign=top><input type="text" name="_FROM_ADDR" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Subject:</font></td>
+	<td valign=top><input type="text" name="subject" size=35></td>
+</tr><tr>
+	<td valign=top colspan=2 width=100%><br><br>
+	<FONT_BODY>Please type the message contents below:</font><br>
+	<textarea name="contents" rows=12 cols=50 wrap="virtual"></textarea>
+	</td>
+</tr></table><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Send Mail"> 
+<input type="reset" value="Clear Fields">
+</font></center><br>
+
+<FOOTER>

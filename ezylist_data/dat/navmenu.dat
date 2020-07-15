@@ -1,0 +1,7 @@
+Setup::setup::First Time Setup,firsttime::Settings,settings::Backup Member Data,backup::Manage Administrators,admin::Export Database,export::Other,other
+Members::member::Create New Member,create::Manage Member,manage::Activate Member,activate::Deactivate Member,deactivate::Search All Members,search
+Communicate::communicate::E-Mail All Member(s),email::Create Message,create::Manage Message,manage
+Mailing Lists::lists::Create Mailng List,create::Manage Mailing List,manage::Browse Mailing List,browse::Managed Archived Lists,archive
+Follow Ups::followup::Manage Follow Ups,manage::Schedule Mailings,schedule::Create Message,create::Edit Message,edit::Delete Message,delete::View Follow Up Logs,viewlogs
+Auto Responders::ar::Create Auto Responder,create::Edit Auto Responder,edit::Delete Auto Responder,delete::View Auto Responder,view
+Advertisements::ad::Create New Banner,create::Manage Banners,manage::Edit Banner,edit::Delete Banner,delete

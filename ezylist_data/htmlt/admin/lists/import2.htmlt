@@ -1,0 +1,37 @@
+<HEADER>
+<TABLE_HEADER Import Mailing List>
+
+<FONT_BODY>
+Your text file has been successfully imported into the selected mailing list.  Below are the 
+results of the import.
+</font><br><br><LINE>
+
+<FONT_HEADER Import Mailing List - Results>
+
+<FONT_BODY>
+A total of <b>~total_success~</b> entries were successfully added to the mailing list, <b>~listname~</b>, and have been 
+scheduled to be sent the first followup message.
+
+<br><br>
+
+A total of <b>~total_error~</b> errors occured while trying to import the text file.  The below table 
+explains exactly which line the errors occured on, and why.
+</font><br><br>
+
+<blockquote><table border=1 cellspacing=1 cellpadding=2 width=70%>
+<tr bgcolor="#F0F0F0">
+	<th nowrap><FONT_BODY>Line Number</font></font></th>
+	<th nowrap><FONT_BODY>Error</font></font></th>
+</tr>
+<REPRODUCE errornum errordesc>
+<tr>
+	<td nowrap align=center><FONT_BODY>~errornum~</font></td>
+	<td nowrap><FONT_BODY>~errordesc~</font></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<FOOTER>
+
+
+

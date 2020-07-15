@@ -1,0 +1,99 @@
+
+<HEADER>
+<TABLE_HEADER Settings - System Settings>
+<form action="~script_name~?menu=setup&action=settings_system" method="POST">
+<input type="hidden" name="action" value="update">
+
+<FONT_BODY>
+From here you can change any of your system settings.  These include 
+such things as, the directories and URLs to several different locations the 
+script uses.  To continue, please make thew appropriate changes to the form below.
+
+<br><br>
+
+<font color="#CC0000"><b>NOTE:</b></font> If you do not know what your doing, 
+do NOT change any of the following settings.  Please only change the system settings 
+if you know exactly what your doing.
+</font>
+
+<br><br><LINE>
+
+<FONT_HEADER Server Functions>
+
+<FONT_BODY><b>Location of <i>mkdir</i>:</b></font><br><br>
+<FONT_BODY>
+Please enter the full path on your server to the <i>mkdir</i> function.
+<br><br><blockquote>
+Location of <i>mkdir</i>:</font> <input type="text" name="cmds0" size=20 value="~cmds0~">
+</blockquote></font><br>
+
+<FONT_BODY><b>Location of <i>rmdir</i>:</b></font><br><br>
+<FONT_BODY>
+Please enter the full path on your server to the <i>rmdir</i> function.
+<br><br><blockquote>
+Location of <i>rmdir</i>:</font> <input type="text" name="cmds1" size=20 value="~cmds1~">
+</blockquote></font><br>
+
+<FONT_BODY><b>Location of <i>tar</i>:</b></font><br><br>
+<FONT_BODY>
+Please enter the full path on your server to the <i>tar</i> function.
+<br><br><blockquote>
+Location of <i>tar</i>:</font> <input type="text" name="cmds2" size=20 value="~cmds2~">
+</blockquote></font><br>
+
+<FONT_BODY><b>Location of <i>gzip</i>:</b></font><br><br>
+<FONT_BODY>
+Please enter the full path on your server to the <i>gzip</i> function.
+<br><br><blockquote>
+Location of <i>gzip</i>:</font> <input type="text" name="cmds3" size=20 value="~cmds3~">
+</blockquote></font><br>
+
+
+<FONT_HEADER Referring URL's>
+<FONT_BODY>
+In the three following fields, please enter the referring URL's of your web site.
+</font>
+
+<br><br><blockquote>
+<FONT_BODY>Referrer 1:</font> <input type="text" name="refs1" size=30 value="~refs1~"><br>
+<FONT_BODY>Referrer 2:</font> <input type="text" name="refs2" size=30 value="~refs2~"><br>
+<FONT_BODY>Referrer 3:</font> <input type="text" name="refs3" size=30 value="~refs3~"><br>
+</blockquote></font><br>
+
+<FONT_HEADER Paths and URL's>
+
+<FONT_BODY><b>Question 1:</b></font><br><br>
+<FONT_BODY>
+Please enter the full path to the <i>ezylist_data</i> directory on your server.
+<br><br><blockquote>
+Full path to <b>ezylist_data</b> directory:</font> <input type="text" name="datadir" size=30 value="~datadir~">
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 2:</b></font><br><br>
+<FONT_BODY>
+Please enter the full path to the <i>cgi-bin</i> directory on your server, where all of the CGI scripts for the eZyList are stored.
+<br><br><blockquote>
+Full path to <b>cgi-bin</b> directory:</font> <input type="text" name="cgidir" size=30 value="~cgidir~">
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 3:</b></font><br><br>
+<FONT_BODY>
+Please enter the URL to the <b>cgi-bin</b> directory on your server, where all of the CGI scripts for the eZyList are stored.
+<br><br><blockquote>
+URL to the <b>cgi-bin</b> directory:</font> <input type="text" name="cgiurl" size=30 value="~cgiurl~">
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 4:</b></font><br><br>
+<FONT_BODY>
+Please enter the URL to the <b>images</b> directory on your server, where all of the images for the eZyList are stored.
+<br><br><blockquote>
+URL to the <b>images</b> directory:</font> <input type="text" name="gifurl" size=30 value="~gif_url~">
+</blockquote></font><br>
+
+<LINE><center><FONT_BODY>
+<input type="submit" value="Update Settings">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+

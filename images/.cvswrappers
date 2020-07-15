@@ -1,0 +1,3 @@
+# Image files are binaries
+
+*.gif -k 'b'

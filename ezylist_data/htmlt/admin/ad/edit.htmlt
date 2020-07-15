@@ -1,0 +1,51 @@
+<HEADER>
+<TABLE_HEADER Edit Advertisement>
+
+<FONT_BODY>
+From here you can edit the selected advertisement.  Below shows the current contents of the 
+selected advertisement.  Please make the appropriate changes below, and once done, click on the <i>Edit Advertisement</i> 
+button below to save the changes.  If an image currently exists with this advertisement, it is shown below.  You 
+may change the image for this advertisement by selecting it from below.
+
+<br><br>
+
+<form name="ad_form" action="~script_name~?menu=ad&action=edit" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="ad_id" value="~ad_id~">
+<input type="hidden" name="step" value="submit">
+
+<table border=0 cellspacing=2 cellpadding=1 width=100%>
+<tr>
+	<td colspan=2 width=100% align=center><FONT_BODY>
+	<input type="checkbox" name="swf" value="1" ~swf~>
+	Check this box if your "image" is a shockwave flash movie<br><br>
+	</font></td>
+</tr><tr>
+	<td colspan=2 width=100% vlign=top><FONT_BODY>
+	Note: Shockwave flash may not be displayed correctly in the clients' MUA.<br><br>
+	</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Name of Advertisement:</font></td>
+	<td valign=top><FONT_BODY>~name~</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Image:</font></td>
+	<td valign=top><FONT_BODY>~image~</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Redirect Link:</font></td>
+	<td valign=top><input type="text" name="link" value="~link~" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Change Image:</font></td>
+	<td valign=top><input type="file" name="image" size=35></td>
+</tr><tr>
+	<td valign=top colspan=2 width=100%><br><br>
+	<FONT_BODY>Please type the advertisement contents below:</font><br>
+	<textarea name="contents" rows=12 cols=50 wrap="virtual">~contents~</textarea>
+	</td>
+</tr></table><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Edit Advertisement"> 
+<input type="reset" value="Clear Fields">
+</font></center><br>
+
+<FOOTER>

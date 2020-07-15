@@ -1,0 +1,18 @@
+
+<html>
+<head>
+	<title>Thank You!</title>
+</head>
+
+<body>
+<font face="times new roman" size=5><b>Thank You!</b></font><br><br>
+
+<blockquote><font face="arial" size=2>
+Thank you for making the decision to join our program.  You may now login to your Control Panel, 
+by clicking on the following link.<br><br>
+</blockquote>
+
+<center><a href="cpanel/index.cgi">Login to Control Panel</a></center><br>
+
+</body>
+</html>

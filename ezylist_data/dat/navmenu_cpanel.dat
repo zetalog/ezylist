@@ -1,0 +1,4 @@
+Setup::setup::Edit Profile,profile::Contact Support,support
+Mailing Lists::lists::Generate Subscribe Form,form::Create Mailng List,create::Delete Mailing List,delete::Manage Mailing List,manage::Browse Mailing List,browse::Managed Archived Lists,archive
+Manage Follow Ups::followup::Manage Follow Ups,manage::Schedule Mailings,schedule::Create Message,create::Edit Message,edit::Delete Message,delete::View Follow Up Logs,viewlogs
+Auto Responders::ar::Create Auto Responder,create::Edit Auto Responder,edit::Delete Auto Responder,delete::View Auto Responder,view

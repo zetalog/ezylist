@@ -1,0 +1,35 @@
+<HEADER>
+<TABLE_HEADER Create Mailing List>
+<form action="~script_name~?menu=lists&action=create2" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="listname" value="~listname~">
+<input type="hidden" name="fieldnum" value="~fieldnum~">
+
+<FONT_BODY>
+On this page, you now have to enter the names of the fields which the new mailing list will contain.  
+There is one text box for every field you wanted in the new mailing list.  Please enter the names 
+of the fields below.  The field names can not contain spaces or special characters.
+</font><br><br><LINE>
+
+<FONT_HEADER Mailing List Field Names>
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Name of Mailing List:</font><br><br></td>
+	<td nowrap><FONT_BODY>~listname~</font><br><br></td>
+</tr>
+<REPRODUCE num>
+<tr>
+	<td nowrap><FONT_BODY>Field ~num~:</font></td>
+	<td nowrap><input type="text" name="f~num~" size=25></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Create Mailing List">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+
+

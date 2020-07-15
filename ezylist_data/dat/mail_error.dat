@@ -1,0 +1,18 @@
+600::Invalid e-mail address
+601::Unable to connect to SMTP server
+602::Does not appear to be a SMTP server
+603::Unable to greet SMTP server
+604::Sender e-mail address rejected by SMTP server
+605::Recipient e-mail address rejected by SMTP server
+606::Unable to send message contents to SMTP server
+607::SMTP server did not accept e-mail message for delivery
+608::No MX records for domain
+609::Server required login but we failed
+620::Mailbox not local.  Message forwarded to correct address
+621::Mailbox busy.  Unable to send message.
+622::Mailbox does not exist.  Invalid e-mail address.
+623::Mailbox not local.  Correct address is
+624::Mailbox is currently full.  Unable to send message.
+625::Mailbox is currently full.  Unable to send message.
+626::SMTP server did not accept e-mail message for delivery
+

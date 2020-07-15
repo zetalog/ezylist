@@ -1,0 +1,32 @@
+
+<html>
+<head>
+	<title>Password Reminder</title>
+</head>
+
+<body>
+<blockquote><font face="arial" size=2>
+Forgot your password?  Have your password e-mailed to you by entering your username and e-mail address 
+in the form below.
+</font></blockquote><br>
+
+<form action="~script_name~" method="POST">
+<table border=1 cellspacing=2 cellpadding=2 width=60% align=center>
+<tr>
+	<th width=100% colspan=2 bgcolor="#888888"><font face="arial" size=3 color="#FFFFFF">Password Reminder</font></th>
+</tr><tr>
+	<td><font face="arial" size=2>Username:</font></td>
+	<td><input type="text" name="username" size=25></td>
+</tr><tr>
+	<td><font face="arial" size=2>E-Mail Address:</font></td>
+	<td><input type="text" name="email" size=25></td>
+</tr><tr>
+	<td width=100% colspan=2 align=center><font face="arial" size=2>
+	<input type="submit" value="E-Mail My Password">
+	<input type="reset" value="Clear Fields">
+	</font></td>
+</tr></table></form>
+
+</body>
+</html>
+

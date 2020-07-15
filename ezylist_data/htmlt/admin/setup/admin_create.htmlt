@@ -1,0 +1,51 @@
+<HEADER>
+<TABLE_HEADER Create New Administrator>
+
+<form action="~script_name~?menu=setup&action=admin_create" method="POST">
+
+<FONT_BODY>
+From here you can create a new administrator.  This administrator will have access 
+to the admin control panel.  However, you can choose exactly which options the new administrator is allowed 
+to perform from the admin control panel.  To continue, please fill out the following form 
+and click on the <i>Create New Administrator</i> button below.
+</font><br><br><LINE>
+
+<FONT_HEADER Administrator Profile>
+<blockquote>
+<table border=0 cellspacing=2 cellpadding=1 width=100%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><input type="text" name="username" size=30></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Full Name:</font></td>
+	<td nowrap><input type="text" name="fullname" size=30></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>E-Mail Address:</font></td>
+	<td nowrap><input type="text" name="email" size=30></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Password:</font></td>
+	<td nowrap><input type="password" name="password" size=30></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Confirm Password:</font></td>
+	<td nowrap><input type="password" name="password2" size=30></td>
+</tr></table><br></blockquote>
+
+<FONT_HEADER Administrator Actions>
+<FONT_BODY>
+Below is a list of all actions which can be performed from the admin control panel.  Please 
+check the actions which you would like the new administrator to be able to perform.  If the administrator 
+tries to perform an action which is not checked, they will receive an error saying they are not 
+authorized to perform that action.
+</font><br><br>
+
+<table border=1 cellspacing=0 cellpadding=2 width=100%>
+<tr>
+~actions_html~
+</tr></table><br><br>
+
+<LINE><center>
+<input type="submit" value="Create New Administrator">
+<input type="reset" value="Clear Form">
+</center>
+
+<FOOTER> 

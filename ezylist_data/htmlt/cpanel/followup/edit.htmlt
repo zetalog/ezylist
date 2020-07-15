@@ -1,0 +1,53 @@
+<HEADER>
+<TABLE_HEADER Edit Follow Up Message>
+
+<FONT_BODY>
+From here you can edit the selected follow up message.  Below shows the current contents of the 
+selected message.  Please make the appropriate changes below, and once done, click on the <i>Edit Message</i> 
+button below to save the changes.  If an attachment currently exists with this message, it is shown below.  You 
+may change the attachment for this message by selecting it from below.
+
+<br><br>
+
+<font color="#CC0000"><b>NOTE:</b></font> You may add an unsubscribe link to the e-mail message by 
+adding the merge field, <i>~unsubscribe_link~</i> anywhere in your e-mail message.  When a subscriber 
+clicks on this link, they will be automatically unsubcribed from the mailing list.
+<br><br>
+
+<LINE><include merge.htmlt></LINE>
+
+<form name="email_form" action="~script_name~?menu=followup&action=edit2" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="message" value="~message~">
+
+<table border=0 cellspacing=2 cellpadding=1 width=100%>
+<tr>
+	<td colspan=2 width=100% align=center><FONT_BODY>
+	<input type="checkbox" name="_html" value="1" ~html~>
+	Check this box if your message contains HTML<br><br>
+	</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Name of Message:</font></td>
+	<td valign=top><FONT_BODY>~name~</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Attachment:</font></td>
+	<td valign=top><FONT_BODY>~attachfile~</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Subject:</font></td>
+	<td valign=top><input type="text" name="subject" value="~subject~" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Change Attachment:</font></td>
+	<td valign=top><input type="file" name="attachment" size=35></td>
+</tr><tr>
+	<td valign=top colspan=2 width=100%><br><br>
+	<FONT_BODY>Please type the message contents below:</font><br>
+	<textarea name="contents" rows=12 cols=50 wrap="virtual">~contents~</textarea>
+	</td>
+</tr></table><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Edit Message"> 
+<input type="reset" value="Clear Fields">
+</font></center><br>
+
+<FOOTER>

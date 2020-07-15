@@ -1,0 +1,49 @@
+<HEADER>
+<TABLE_HEADER View Auto Responder>
+
+<FONT_BODY>
+Below shows a log for every message which was sent to the selected auto responder.  
+</font><br><br><LINE>
+
+<FONT_HEADER Auto Responder Log>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Auto Responder:</font></td>
+	<td nowrap><FONT_BODY>~ar~</font></td>
+</table></blockquote><br><br>
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+	<td align=left width=30% nowrap><FONT_BODY>
+	<IF prev><a href="~script_name~?menu=ar&action=view&username=~username~&listid=~ar~&start=~start_previous~">&lt; Previous</a> | </IF>
+	<IF next><a href="~script_name~?menu=ar&action=view&username=~username~&listid=~ar~&start=~start_next~">Next &gt;</a></IF>
+	</font></td>
+
+	<td align=right width=70% nowrap><FONT_BODY> <b>Quick Jump:</b> | ~jumplinks~</font></td> 
+</tr></table>
+
+
+<table border=1 cellspacing=2 cellpadding=2 width=100%>
+<tr bgcolor="#F0F0F0">
+	<th><FONT_BODY>From E-Mail</font></th>
+	<th><FONT_BODY>From Name</font></th>
+	<th><FONT_BODY>Date</font></th>
+	<th><FONT_BODY>Time</font></th>
+</tr>
+
+<REPRODUCE from_email from_name date time>
+<tr>
+	<td nowrap><FONT_BODY>~from_email~</font></td>
+	<td nowrap><FONT_BODY>~from_name~</font></td>
+	<td nowrap><FONT_BODY>~date~</font></td>
+	<td nowrap><FONT_BODY>~time~</font></td>
+</tr>
+</REPRODUCE>
+</table><br><br>
+
+<FOOTER>
+

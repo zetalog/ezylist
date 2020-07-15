@@ -1,0 +1,58 @@
+<HEADER>
+<TABLE_HEADER ~title~>
+
+<FONT_BODY>
+Below is a list of all messages currently in your database.  
+Please select one of the messages below, and click on the 
+<i>Submit</i> button at the bottom of the page.
+</font><br><br>
+
+<form action="~script_name~?~query_string~" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="step" value="getmsg">
+<IF notify>
+<input type="hidden" name="_notify" value="~_notify~">
+</IF>
+<IF emailall>
+<input type="hidden" name="_emailall" value="~_emailall~">
+</IF>
+<table border=1 cellspacing=1 cellpadding=2 width=90% align=center>
+<tr bgcolor="#A3A9B7">
+	<th width=100% colspan=4>
+	<font face="verdana" size=3>Messages</font></th>
+</tr><tr bgcolor="#F0F0F0">
+	<th><FONT_BODY>Message Name</font></th>
+	<th><FONT_BODY>Subject</font></th>
+	<th><FONT_BODY>Type</font></th>
+	<th>&nbsp;</th>
+</tr>
+<IF custom>
+<tr>
+	<td><FONT_BODY>Custom Message</font></td>
+	<td><FONT_BODY>Not set</font></td>
+	<td><FONT_BODY>custom</font></td>
+	<th><input type="radio" name="message" value="_custom_message" checked></th>
+</tr>
+</IF>
+<REPRODUCE rmessage rname rsubject rtype>
+<tr>
+	<td><FONT_BODY><a href="~script_name~~interrogation~module=main&menu=communicate&action=edit&message=~rmessage~">~rname~</a></font></td>
+	<td><FONT_BODY>~rsubject~</font></td>
+	<td><FONT_BODY>~rtype~</font></td>
+	<th><input type="radio" name="message" value="~rmessage~"></th>
+</tr>
+</REPRODUCE>
+</tr></table><br><br>
+
+<LINE>
+<IF manage>
+<center>
+<REPRODUCE action>
+<input type="submit" name="action" value="~action~">
+</REPRODUCE>
+</center>
+</IF>
+<center>
+<input type="submit" name="submit" value="submit">
+</center>
+<FOOTER>

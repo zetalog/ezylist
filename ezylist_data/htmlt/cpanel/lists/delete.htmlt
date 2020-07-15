@@ -1,0 +1,27 @@
+<HEADER>
+<TABLE_HEADER Delete Mailing List>
+<form action="~script_name~?menu=lists&action=delete" method="POST">
+<input type="hidden" name="action" value="delete">
+<input type="hidden" name="username" value="~username~">
+
+<FONT_BODY>
+From here you can delete any one of your member's mailing lists.  Below is a table showing the 
+current mailing lists for the selected member.  Select the list from below which you would like 
+to delete, and click on the <i>Delete Mailing List</i> button.
+</font><br><br><LINE>
+
+<FONT_HEADER Current Mailing Lists>
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr></table></blockquote><br>
+
+<include admin/list_info.htmlt>
+
+<br><center><FONT_BODY>
+<input type="submit" value="Delete Mailing List">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>

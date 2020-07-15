@@ -1,0 +1,41 @@
+<HEADER>
+<TABLE_HEADER Manage Administrators>
+
+<FONT_BODY>
+From here you can add, edit and delete administrators.  Below is a list 
+of all administrators currently in your program.  To continue, please select 
+one of the administrators below, and click on the appropriate button at the bottom 
+of the screen.
+</font><br><br><LINE>
+
+<form action="~script_name~?menu=setup&action=admin" method="POST">
+<table border=1 cellspacing=1 cellpadding=2 width=90% align=center>
+<tr bgcolor="#A3A9B7">
+	<th width=100% colspan=4>
+	<font face="verdana" size=3>Administrators</font></th>
+</tr><tr bgcolor="#F0F0F0">
+	<th>&nbsp;</th>
+	<th><FONT_BODY>Username</font></th>
+	<th><FONT_BODY>Name</font></th>
+	<th><FONT_BODY>E-Mail Address</font></th>
+</tr>
+<REPRODUCE admin_username admin_name admin_email>
+<tr>
+	<th><input type="radio" name="username" value="~admin_username~"></th>
+	<td><FONT_BODY>~admin_username~</font></td>
+	<td><FONT_BODY>~admin_name~</font></td>
+	<td><FONT_BODY><a href="mailto:~admin_email~">~admin_email~</a></font></td>
+</tr>
+</REPRODUCE>
+</tr></table><br><br>
+
+<LINE>
+<center>
+<input type="submit" name="submit" value="Create New Administrator"><br>
+<input type="submit" name="submit" value="Edit Administrator">
+<input type="submit" name="submit" value="Delete Administrator">
+</center>
+
+
+<FOOTER>
+

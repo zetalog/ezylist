@@ -1,0 +1,105 @@
+
+<html>
+<head>
+	<title>User Manual - eZyList Pro v1.0 - Created by eZyScripts.Com</title>
+</head>
+
+<body>
+<center><font face="times new roman" size=5><b>eZyList Pro v1.0</b></font><br>
+<font face="arial" size=2><b>Created by Lv 'Zetalog' Zheng of <a href="http://www.ezyscripts.com/">eZyScripts.Com</a></b></font><br>
+</center><br><br>
+
+<font face="arial" size=3><b>Uploading Everything</b></font><br><br>
+
+<blockquote><font face="arial" size=2>
+The next thing you need to do is upload all files to your web server.  To do this, first connect to your web server 
+via FTP.  If you do not know how to use File Transfer Protocol (FTP), please <a href="../tutorials/ftp/index.html">click here</a> 
+to go to the FTP tutorial we included with this manual.  Once logged in to your web server, please follow these steps.
+
+<br><br><ol>
+	<li><b><u><font size=3>Upload the <i>ezylist_data</i> directory</font></u></b><br><br>
+	<ol>
+		<li>Create a directory on your server called <b>ezylist_data</b>.  For security reasons, we recommend you put 
+		this directory below your document root, which is where you should be right now.<br><br>
+		
+		<li>Upload the contents of the <b>ezylist_data</b> directory, from the zip file, in to the <b>ezylist_data</b> directory you just 
+		created.  Make sure you upload everything in ASCII mode!<br><br>
+		
+		<li>CHMOD the <b>ezylist_data</b> directory as follows:<br><br>
+			
+			<ul><font face="verdana" size=2>
+				<li>ezylist_data - 777
+				<li>ezylist_data/dat - 777
+				<li>ezylist_data/htmlt - 777
+				<li>ezylist_data/ezylist.conf - 777
+				<li>ezylist_data/ezylist.cron - 777
+				<li>ezylist_data/dat/ <i>(All <b>.dat</b> files inside directory)</i> - 777
+				<li>ezylist_data/htmlt/admin - 755
+				<li>ezylist_data/htmlt/cpanel - 755
+			</font></ul>
+		</ol><br><br>
+	
+	<li><b><u><font size=3>Upload the <i>cgi-bin</i> directory</font></u></b><br><br>
+	<ol>
+		<li>Change directories on your web server to your <b>cgi-bin</b> directory, where all of your CGI 
+		scripts are stored.<br><br>
+		
+		<li>Create a new directory inside your cgi-bin called <b>ezylist</b><br><br>
+		
+		<li>Upload the contents of the <b>cgi-bin</b> directory, from the zip file, in to the <b>cgi-bin/ezylist</b> 
+		directory you just created.  Make sure you upload everything in ASCII format!<br><br>
+		
+		<li>CHMOD the <b>cgi-bin</b> directory as follows:<br><br>
+
+			<ul><font face="verdana" size=2>
+				<li>cgi-bin/error.cgi - 777
+				<li>cgi-bin/followup.pl - 777
+				<li>cgi-bin/install.cgi - 755
+				<li>cgi-bin/newuser.cgi - 777
+				<li>cgi-bin/process.pl - 777
+				<li>cgi-bin/reminder.cgi - 777
+				<li>cgi-bin/subscribe.cgi - 777
+				<li>cgi-bin/update.pl - 777
+				<li>cgi-bin/admin - 755
+				<li>cgi-bin/admin/.htaccess - 777
+				<li>cgi-bin/admin/admin.cgi - 777
+				<li>cgi-bin/admin/ <i>(All <b>.pl</b> files inside directory)</i> - 755
+				<li>cgi-bin/cpanel - 755
+				<li>cgi-bin/cpanel/.htaccess - 777
+				<li>cgi-bin/cpanel/ <i>(All <b>.pl</b> files inside directory)</i> - 755
+				<li>cgi-bin/lib - 755
+				<li>cgi-bin/lib/ <i>(All <b>.pl</b> files inside directory)</i> - 755
+				<li>cgi-bin/modules - 755
+				<li>cgi-bin/modules/exec.pl - 777
+			</font></ul><br>
+			
+			<font color="#CC0000"><b>NOTE:</b></font> 
+			If you are familiar with installing CGI scripts, you are probably thinking that 
+			some of the permissions above are wrong.  They are NOT!  Please CHMOD all of the files to 
+			the exact permissions as stated above, or the script will not install correctly.
+	</ol><br><br>
+
+	<li><b><u><font size=3>Upload the <i>images</i> directory</font></u></b><br><br>
+	<ol>
+		<li>Change directories on your server to your <b>images</b> directory, where all of your images 
+		are stored.  If you do not currently have one, create a directory called <b>images</b> inside your document root.
+		<br><br>
+		
+		<li>Inside your <b>images</b> directory, create a new directory called <b>ezylist</b><br><br>
+		
+		<li>Upload the contents of the <b>images</b> direcrory, from the zip file, in to the new <b>images/ezylist</b> directory you just 
+		created.  Make sure you upload everything in Binary format, NOT ASCII!<br><br>
+		
+		<li>You do NOT need to CHMOD any of the files in the <b>images</b> directory.
+	</ol>
+</ol><br><br>
+
+</font></blockquote><br>
+
+<center><font face="verdana" size=3><b>
+<a href="1.html">&lt; Prev</a> | 
+<a href="3.html">Next &gt;</a>
+</b></font></center>
+
+</body>
+</html>

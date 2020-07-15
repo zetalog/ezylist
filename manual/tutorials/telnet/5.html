@@ -1,0 +1,53 @@
+
+<html>
+<head>
+	<title>User Manual - Web Site Replicator v1.0 - Created by eZyScripts.Com</title>
+</head>
+
+<body>
+<center><font face="times new roman" size=5><b>Web Site Replicator v1.0</b></font><br>
+<font face="arial" size=2><b>Created by Lv 'Zetalog' Zheng of <a href="http://www.ezyscripts.com/">eZyScripts.Com</a></b></font><br>
+</center><br><br>
+
+<font face="arial" size=3><b>Telnet Tutorial - Copying and Moving Files and Directories</b></font><br><br>
+
+<blockquote><font face="arial" size=2>
+Now you know how to delete files and directories, so lets learn how to copy and move them.  Copying and moving files 
+in telnet is just as easy as deleting them.  The basic syntax for copying a file or directory is:
+
+<br><blockquote><tt>
+cp -R OLDFILE NEWFILE<br><br>
+cp -R /home/mysite/www/members /home/mysite/www/reps
+</tt></blockquote><br>
+
+This command will copy whatever you put for <tt>OLDFILE</tt> to whatever you put for <tt>NEWFILE</tt>.  In the example above, 
+everything inside the directory <tt>/home/mysite/www/members</tt> would be copied over to the directory 
+<tt>/home/mysite/www/reps</tt>.  Both directories will still exist, and will contain the exact same thing.
+This command will work for both, files and directories.
+
+<br><br>
+
+Moving files and directories is done in almost the exact same way.  The basic syntax to move a file or directory is:
+
+<br><blockquote><tt>
+mv OLDFILE NEWFILE<br><br>
+mv /home/mysite/www/members /home/mysite/www/reps
+</tt></blockquote><br>
+
+The above example will move the directory <tt>/home/mysite/www/members</tt> to the directory <tt>/home/mysite/www/reps</tt>.  
+The <tt>members</tt> directory will no longer exist, unlike copying the directory.  This command will also work on both, files and 
+directories.
+
+<br><br>
+
+To rename a file or directory, you would also use the <tt>mv</tt> command.  Since this command moves the <tt>OLDFILE</tt> to the <tt>NEWFILE</tt>, it 
+is just like renaming a file or directory.
+</font></blockquote><br>
+
+<center><font face="verdana" size=3><b>
+<a href="4.html"> &lt; Prev</a> | 
+<a href="6.html"> Next &gt;</a>
+</b></font></center>
+
+</body>
+</html>

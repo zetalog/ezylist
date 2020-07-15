@@ -1,0 +1,44 @@
+
+<html>
+<head>
+	<title>User Manual - Web Site Replicator v1.0 - Created by eZyScripts.Com</title>
+</head>
+
+<body>
+<center><font face="times new roman" size=5><b>Web Site Replicator v1.0</b></font><br>
+<font face="arial" size=2><b>Created by Lv 'Zetalog' Zheng of <a href="http://www.ezyscripts.com/">eZyScripts.Com</a></b></font><br>
+</center><br><br>
+
+<font face="arial" size=3><b>Telnet Tutorial - Unzipping tar.gz files</b></font><br><br>
+
+<blockquote><font face="arial" size=2>
+Have you ever downloaded a zip file which has a <tt>tar.gz</tt> extension?  This is a UNIX zip file.  
+To unzip this file, upload it to your web server, then telnet into your account.  First you have to unzip the 
+file which you can do by typing:
+
+<br><blockquote><tt>
+gunzip FILENAME<br>
+gunzip file_tar
+</tt></blockquote><br>
+
+Do NOT type the ending <tt>.gz</tt> when your unzipping the file.  The server already knows it's supposed to be there.  
+This will unzip the <tt>FILENAME</tt>, and leave you with another, much larger, file without the <tt>.gz</tt> extension.  
+To unzip this file, you will have to type the following:
+
+<br><blockquote><tt>
+tar -xvf FILENAME<br>
+tar -xvf file_tar
+</tt></blockquote><br>
+
+If your wondering what <tt>-xvf</tt> means, the <tt>x</tt> means extract a file, the <tt>v</tt> means verbose so you can see what's 
+happening, and <tt>f</tt> means the filename.  This will unzip the entire contents of the <tt>FILENAME</tt> and create any directories 
+needed.
+</font></blockquote><br>
+
+<center><font face="verdana" size=3><b>
+<a href="9.html"> &lt; Prev</a> | 
+<a href="11.html"> Next &gt;</a>
+</b></font></center>
+
+</body>
+</html>

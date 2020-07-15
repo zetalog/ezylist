@@ -1,0 +1,39 @@
+<HEADER>
+<TABLE_HEADER Edit Profile>
+<form action="~script_name~?menu=setup&action=profile" method="POST">
+
+<FONT_BODY>
+From here you can edit the fields of your member profile.  Below 
+shows the current information of your member profile.  Feel free to make 
+any needed changes below, and once done, click on the <i>Edit Profile</i> button 
+to save the changes.
+
+<IF moptions1>
+<br><br>
+To change your password, delete the <i>&lt;--ENCRYPTED--&gt;</i> text from the Password 
+field, and enter your new password.
+</IF>
+</font><br><br><LINE>
+
+
+<FONT_HEADER Current Profile>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr>
+
+<REPRODUCE editfield userinfo>
+<tr>
+	<td nowrap><FONT_BODY>~editfield_titlecase~:</font></td>
+	<td nowrap><input type="text" name="~editfield~" size=25 value="~userinfo~"></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Edit Profile">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>

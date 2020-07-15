@@ -1,0 +1,3 @@
+# Microsoft word documents are binaries
+
+*.doc -k 'b'

@@ -1,0 +1,49 @@
+<HEADER>
+<TABLE_HEADER Edit Scheduled Mailing>
+<form action="~script_name~?menu=followup&action=schedule_edit" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+<input type="hidden" name="mailid" value="~mailid~">
+
+<FONT_BODY>
+From here you can edit the selected scheduled mailing.  Below shows the current 
+information on the mailing.  Feel free to make any needed changes below, and once done, 
+click on the <i>Edit Mailing</i> button to save the changes.
+</font><br><br><LINE>
+
+<FONT_HEADER Scheduled Mailing Information>
+<blockquote><table border=0 cellspacing=1 cellpadding=2>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing Date:</font></td>
+	<td nowrap>~maildate_html~</td>
+</tr><tr>
+	<td colspan=2 width=100% align=center><FONT_BODY><br><br>
+	<input type="checkbox" name="_html" value="1" ~html_check~>
+	Check this box if your message contains HTML<br><br>
+	</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Name of Message:</font></td>
+	<td valign=top><input type="text" name="name" size=35 value="~name~"></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Subject:</font></td>
+	<td valign=top><input type="text" name="subject" size=35 value="~subject~"></td>
+</tr><tr>
+	<td valign=top colspan=2 width=100%><br><br>
+	<FONT_BODY>Please type the message contents below:</font><br>
+	<textarea name="contents" rows=12 cols=50 wrap="virtual">~contents~</textarea>
+	</td>
+</tr></table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Edit Mailing">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+

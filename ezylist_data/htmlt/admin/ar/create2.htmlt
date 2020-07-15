@@ -1,0 +1,58 @@
+<HEADER>
+<TABLE_HEADER Create Auto Responder>
+<form action="~script_name~?menu=ar&action=create2" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="listid" value="~attach_list~">
+<input type="hidden" name="ar_username" value="~ar_username~">
+<input type="hidden" name="ar_domain" value="~ar_domain~">
+
+<FONT_BODY>
+To finish creating the new auto responder, please type the message which you would like 
+for an auto-reply.  Every time someone sends an e-mail to the auto responder, the script 
+will automatically e-mail them this message, and add them to the mailing list specified below.
+
+<br><br>
+
+If wanted, you may also add an attachment to your auto responder.  To do so, simply select the 
+file attachment below.
+</font><br><br><LINE>
+
+<FONT_HEADER Message Information>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Auto Responder:</font></td>
+	<td nowrap><FONT_BODY>~ar_username~@~ar_domain~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr></table></blockquote><br><br>
+
+
+<table border=0 cellspacing=2 cellpadding=1 width=100%>
+<tr>
+	<td colspan=2 width=100% align=center><FONT_BODY>
+	<input type="checkbox" name="_html" value="1">
+	Check this box if your message contains HTML<br><br>
+	</font></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Subject:</font></td>
+	<td valign=top><input type="text" name="subject" size=35></td>
+</tr><tr>
+	<td valign=top><FONT_BODY>Attachment:</font></td>
+	<td valign=top><input type="file" name="attachment" size=35></td>
+</tr><tr>
+	<td valign=top colspan=2 width=100%><br><br>
+	<FONT_BODY>Please type the message contents below:</font><br>
+	<textarea name="contents" rows=12 cols=50 wrap="virtual"></textarea>
+	</td>
+</tr></table><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Create Auto Responder"> 
+<input type="reset" value="Clear Fields">
+</font></center><br>
+
+<FOOTER>

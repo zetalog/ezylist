@@ -1,0 +1,18 @@
+<HEADER>
+<TABLE_HEADER Contact Support>
+<form action="~script_name~?menu=setup&action=support" method="POST">
+
+<FONT_BODY>
+If you ever have any problems, or questions, please contact our support 
+department by entering your message below.  We will reply to your support 
+request as soon as possible.
+</font><br><br><LINE>
+
+<FONT_HEADER Contact Support>
+
+<FONT_BODY>Contents of Message:</font><br><br>
+<textarea name="contents" rows=15 cols=50 wrap="virtual"></textarea>
+<br><br>
+
+<center><FONT_BODY><input type="submit" value="Contact Support"></font></center><br>
+<FOOTER>

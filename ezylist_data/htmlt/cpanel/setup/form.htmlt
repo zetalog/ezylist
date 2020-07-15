@@ -1,0 +1,16 @@
+<HEADER>
+<TABLE_HEADER Generate Subscribe Form>
+<form action="#">
+
+<FONT_BODY>
+The below text box contains the HTML code for your subscription form.  All you need 
+to do is copy and paste the below code into your web page, and people will be able to 
+easily subscribe to your mailing list.
+</font><br><br><LINE>
+
+<FONT_HEADER Subscribe Form>
+<blockquote><FONT_BODY>HTML Code:</font><br><br>
+<textarea name="results" rows=15 cols=50 nowrap>~results~</textarea>
+</blockquote><br><br>
+
+<FOOTER>

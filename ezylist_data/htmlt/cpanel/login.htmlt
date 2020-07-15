@@ -1,0 +1,37 @@
+
+<html>
+<head>
+	<title>Security Check - Control Panel v~SCRIPT_VERSION~</title>
+</head>
+
+<body>
+<form action="~script_name~" method="POST" name=login>
+<input type="hidden" name="action" value="check_pass">
+
+<br><center><font face="times new roman" size=5><b>Security Check - Control Panel v~SCRIPT_VERSION~</b></font><br><br>
+
+<table border=1 cellspacing=1 cellpadding=2 width=50% align=center>
+<tr>
+	<th bgcolor="#888888" colspan=2 nowrap><font face="verdana" size=3 color="#FFFFFF">Control Panel</font></th>
+</tr><tr>
+	<td valign=top nowrap><font face="arial" size=2>Username: </font></td>
+	<td valign=top nowrap><input type="text" name="username" size=30></td>
+</tr><tr>
+	<td valing=top nowrap><font face="arial" size=2>Password: </font></td>
+	<td valign=top nowrap><input type="password" name="password" size=30></td>
+</tr><tr>
+	<td valign=top align=center colspan=2 width=100%><font face="arial" size=2>
+	<input type="submit" value="Login Now"> 
+	<input type="reset" value="Reset Form">
+	</font></td>
+</tr></table>
+
+<blockquote><a href="../reminder.cgi"><font face="ms sans serif" size=2>Forgot Your Password?</font></a></blockquote>
+
+<script>
+document.login.username.focus();
+</script>
+
+</body>
+</html>
+

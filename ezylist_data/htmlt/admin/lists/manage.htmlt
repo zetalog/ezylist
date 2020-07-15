@@ -1,0 +1,43 @@
+<HEADER>
+<TABLE_HEADER ~title~ - Select Mailing List>
+<form action="~script_name~?~query_string~" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="step" value="select">
+
+<FONT_BODY>
+The following action requires a mailing list.  To continue, please select a mailing list from below.  
+Once done, click on the <i>~title~</i> button below.
+</font><br><br><LINE>
+
+<FONT_HEADER Select Mailing List>
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr></table></blockquote><br>
+
+<table border=1 cellspacing=1 cellpadding=2 width=90% align=center>
+<tr bgcolor="#A3A9B7">
+	<th width=100% colspan=3>
+	<font face="verdana" size=3>Current Mailing Lists</font></th>
+</tr><tr bgcolor="#F0F0F0">
+	<th>&nbsp;</th>
+	<th><FONT_BODY>Mailing List Name</font></th>
+	<th><FONT_BODY>Subscribers</font></th>
+</tr>
+<REPRODUCE list_id list_name list_subscribers>
+<tr>
+	<th nowrap><input type="radio" name="list_id" value="~list_id~"></th>
+	<td nowrap><FONT_BODY>~list_name~</font></td>
+	<td nowrap><FONT_BODY>~list_subscribers~</font></td>
+</tr>
+</REPRODUCE>
+</table><br>
+
+<center>
+<REPRODUCE action>
+<input type="submit" name="action" value="~action~">
+</REPRODUCE>
+</center>
+
+<FOOTER>

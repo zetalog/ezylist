@@ -1,0 +1,98 @@
+<HEADER>
+<TABLE_HEADER Create New Member>
+<form action="~script_name~?menu=member&action=create" method="POST">
+
+<FONT_BODY>
+From here you can create a new member.  Once crested, the new member will then be able to 
+login to the Member Control Panel and being managing their mailing lists, and autoresponders.
+To continue, please complete the following form.
+</font><br><br><LINE>
+
+
+<FONT_HEADER Member Type>
+<FONT_BODY>
+Which type of user would you like to create?  There are three types to choose from which are:
+
+<br><br><b>Unregistered Mailer: </b> Only can add user to mailing list manually. Every going out email has an rolling
+ advertising banner.
+
+<br><br><b>Registered Mailer: </b> Can import and export their mailing list data. Every going out email has no advertising
+ banners.
+
+<br><br><b>Advertiser: </b> Can publish banners. The advertiser account can create up to 10 banners. These banners will 
+be displayed to client's menu and every out going emails of unregistered client by random.
+
+<br><br><blockquote>
+<input type="radio" name="type" value="unregistered" checked>Unregistered Mailer<br>
+<input type="radio" name="type" value="registered">Registered Mailer<br>
+<input type="radio" name="type" value="advertiser">Advertiser<br>
+</blockquote></font><br>
+
+<FONT_HEADER Member Profile>
+<FONT_BODY>
+In the below fields, enter the new member's personal information.  The username 
+can not contain spaces or special characters.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<REPRODUCE userfield>
+<tr>
+	<td nowrap><FONT_BODY>~userfield_titlecase~:</font></td>
+	<td nowrap><input type="text" name="~userfield~" size=30></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+
+<FONT_HEADER Additional Information>
+<FONT_BODY>
+This section asks for some additional information, such as how many autoresponders and mailing lists
+the member is allowed to have.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=1>
+<tr>
+	<td valign=top nowrap><FONT_BODY><b>1.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many autoresponders is the member allowed to have?</font></td>
+	<td valign=top width=20%><input type="text" name="_add_autonum" size=5 value="~default0~"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>2.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many mailing lists is the member allowed to create?</font></td>
+	<td valign=top width=20%><input type="text" name="_add_listnum" size=5 value="~default1~"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>3.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many follow up e-mail messages, not including one for each 
+	autoresponder, is the member allowed to create?</font></td>
+	<td valign=top width=20%><input type="text" name="_add_msgnum" size=5 value="~default2~"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>4.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many follow up cycles is the member allowed to have for each mailing list?</font></td>
+	<td valign=top width=20%><input type="text" name="_add_cyclenum" size=5 value="~default3~"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>5.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many mailings would you like to all the member to have 
+	scheduled at one time?</font></td>
+	<td valing=top width=20%><input type="text" name="_add_maxsch" size=5 value="~default4~"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>6.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>What the is maximum number of e-mail messages the member is 
+	allowed to send to the mailing lists, in one day?</font></td>
+	<td valing=top width=20%><input type="text" name="_add_maxmsg" size=8 value="~default5~"></td>
+</tr></table></blockquote><br>
+
+<FONT_HEADER Send Confirmation>
+<FONT_BODY>
+Select who you would like a confirmation e-mail message automatically 
+sent to, when the new member is created:
+
+</font><br><br><blockquote>
+<input type="checkbox" name="_confirm" value="member"><FONT_BODY>The new member</font><br>
+<input type="checkbox" name="_confirm" value="admin"><FONT_BODY>The administrator</font><br>
+</blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Create New Member">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>

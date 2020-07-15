@@ -1,0 +1,98 @@
+
+<html>
+<head>
+	<title>User Manual - eZyList Pro v1.0 - Created by eZyScripts.Com</title>
+</head>
+
+<body>
+<center><font face="times new roman" size=5><b>eZyList Pro v1.0</b></font><br>
+<font face="arial" size=2><b>Created by Lv 'Zetalog' Zheng of <a href="http://www.ezyscripts.com/">eZyScripts.Com</a></b></font><br>
+</center><br><br>
+
+<font face="arial" size=3><b>Run the install.cgi script</b></font><br><br>
+
+<blockquote><font face="arial" size=2>
+After you have uploaded everything, and change the permissions of all the files and directories, you 
+need to run the install.cgi script.  So open up your web browser, and go to the install.cgi script on your server.  
+
+<br>
+
+<blockquote><b>Registration Check</b></blockquote>
+
+When you run the install.cgi script, a screen should appear in your browser, containing only one text field which asks 
+for your registration number.  Enter the registration number you were given from eZyScripts.Com in the text field provided.  
+If you submit a valid registration number, the installation form will appear.
+
+<br><br>
+
+The rest of this page explains, in detail, every section on the installation form.
+
+<br><blockquote><b>Server Functions</b></blockquote>
+
+The Server Functions section, if exists, asks you for the locations of the <b>mkdir</b>, <b>rmdir</b>, <b>tar</b>, and <b>gzip</b> functions 
+on your server.  If this section exists, it means the installation script could not find them on your server.  If you do not know the 
+location to these server functions, please ask your server administrator.  However, if this section does not exist, it means that the installation 
+script has already found these functions on your server for you.
+
+<br><blockquote><b>Administrator Information</b></blockquote>
+
+Since the eZyList Pro supports multiple admins, there must be one created before you can even login to the 
+Admin Control Panel.  That's what this section is for.  So just enter your full name and e-mail address in the two fields.  
+Then for the username and password fields, enter the username and password you would like to use for the Admin Control Panel.  This section 
+should be fairly straight forward.
+
+<br><blockquote><b>Referrers</b></blockquote>
+
+The three fields in this section ask for three different referrers.  This is just an extra security feature we have added in, so when you run one of the CGI scripts, 
+the script will check and make sure your coming from your web server, and not someone elses.  The script has already tried to determine these for you, but may be wrong, so 
+please double check and make sure they are correct.
+
+<br><br>
+
+So for the first referrer, just enter your domain name without the <i>www.</i> or anything else at the beginning.  In the second field, enter 
+your domain name with the <i>www.</i> at the front of it, like <i>www.yourdomain.com</i>.  In the last field, you need to enter the IP address 
+of your domain name.  If you do not know this, please contact your server administrator and ask.
+
+<br><blockquote><b>Path Information</b></blockquote>
+
+This section seems to be the hardest for most people, so we have tried to make it as easy as possible.  This section asks for the full 
+path on your server to several different directories.  The script has already tried to determine the paths for you, but in many cases, all 
+depending on where you uploaded the files, will be wrong.  So please take your time and check and make sure the paths are correct.
+
+<br><br>
+
+If you do not know how to find the full path to a directory on your server, follow these steps to find out:
+<br><ol>
+	<li>Telnet into your account.  If you do not know how, please <a href="../tutorials/telnet/index.html">click here</a> to
+		go to the telnet tutorial included with this manual.
+	<li>Change directories to the directory which you want to find the full path of, by typing, <i>cd DIRNAME</i>.
+	<li>At the prompt, type <b>pwd</b>
+</ol>
+By typing <b>pwd</b> at the prompt, the full path of the directory you are currently in will be displayed.
+
+<br><blockquote><b>URL Information</b></blockquote>
+
+The next section asks for the URL to three different locations on your server.  For each field, just think, 
+when you open up your web browser, what would you type in the URL window to get there?  Then just enter that 
+into the field.  The three fields in this section should be fairly self exclamatory.
+
+<br><blockquote><b>Submit the Form!</b></blockquote>
+
+After you have filled in all of the fields in the form, click on the <i>Install the eZyList Pro v1.0!</i> submit button 
+at the bottom of the page.  If you don't get any errors, then that means the eZyList Pro v1.0 has been successfully installed on 
+your server.  Now, just click on the link and access your Admin Control Panel.  Once inside the Admin Control Panel, go to 
+<i>Setup-&gt;First Time Setup</i> to setup your program.
+
+<br><br>
+
+After you have ran the install.cgi script, make SURE you delete the install.cgi file from your server.  After it has been ran, it is 
+a huge security hazard and nothing else!  So please, make sure you delete the install.cgi file from your server.
+</font></blockquote><br>
+
+<center><font face="verdana" size=3><b>
+<a href="2.html">&lt; Prev</a> | 
+<a href="4.html"> Next &gt;</a>
+</b></font></center>
+
+</body>
+</html>

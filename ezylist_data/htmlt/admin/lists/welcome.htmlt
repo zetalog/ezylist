@@ -1,0 +1,36 @@
+<HEADER>
+<TABLE_HEADER Manage Follow Ups>
+<form action="~script_name~?menu=lists&action=welcome" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+<input type="hidden" name="step" value="welcome">
+
+<FONT_BODY>
+From here you can set a welcome message for the mailing list, which will be automatically
+ sent to the subscriber when they are added to the mailing list.
+</font><br><br><LINE>
+
+<FONT_HEADER Mailing List Info>
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr></table></blockquote><br>
+
+<FONT_HEADER Welcome Message>
+<FONT_BODY>
+If wanted, you can set a welcome message for this mailing list.  If a welcome message is set, 
+when a new subscriber is added to the mailing list, the script will automatically e-mail them 
+the welcome message.
+</font><br><br>
+
+<blockquote><FONT_BODY>Welcome Message:</font>
+	<select name="welcome_message">~welcome_options~</select>
+</blockquote><br>
+
+<center><FONT_BODY><input type="submit" name="submit" value="Set Welcome Message"></font></center><br><br>
+
+<FOOTER>

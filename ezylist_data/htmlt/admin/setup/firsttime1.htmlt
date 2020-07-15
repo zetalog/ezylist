@@ -1,0 +1,275 @@
+
+<HEADER>
+<TABLE_HEADER First Time Setup>
+<form action="~script_name~?menu=setup&action=firsttime" method="POST">
+<input type="hidden" name="discard_db" value="enable">
+
+<FONT_BODY>
+First Time Setup is used to setup your entire program for the first time.  From here you will 
+create your member database, and specify many options.  To continue, please complete the following form.
+
+<br><br>
+
+<font color="#CC0000"><b>NOTE:</b></font> Do NOT run First Time Setup if you currently have member's in your database.  
+If you have member's in your database, please delete them all by going to <i>Setup->Other</i>, before 
+running First Time Setup.
+</font>
+
+<br><br><LINE>
+
+<FONT_HEADER General Questions>
+
+<FONT_BODY><b>Question 1:</b></font><br><br>
+<FONT_BODY>
+Would you like to encrypt your member's passwords?  This provides much better security.  However, 
+there is no way to decrypt your member's passwords, so you will not be able to view any member's password.
+
+<br><br><blockquote>
+<input type="radio" name="moptions1" value="1" checked>Yes<br>
+<input type="radio" name="moptions1" value="0">No<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 2:</b></font><br><br>
+<FONT_BODY>
+Which type of authentication would you like to use for your Member's Only Area?  You may use either, 
+NCSA htaccess, or Cookie Based.  The NCSA htaccess authentication is when a small dialog box will pop up 
+in the member's browser asking for their username and password when they try to view the Member's Only Area.  Cookie 
+based authentication is when the member logs into the Member's Only Area though an HTML form.
+
+<br><br><blockquote>
+<input type="radio" name="moptions3" value="0" checked>Cookie Based<br>
+<input type="radio" name="moptions3" value="1">NCSA htaccess<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 3:</b></font><br><br>
+<FONT_BODY>
+Which type of authentication would you like to use for your Admin Control Panel?  You may use either, 
+NCSA htaccess, or Cookie Based.  The NCSA htaccess authentication is when a small dialog box will pop up 
+in your browser asking for your username and password when you access the Admin Control Panel.  Cookie 
+based authentication is when you access the Admin Control Panel though an HTML form.
+
+<br><br><blockquote>
+<input type="radio" name="moptions2" value="0" checked>Cookie Based<br>
+<input type="radio" name="moptions2" value="1">NCSA htaccess<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 4:</b></font><br><br>
+<FONT_BODY>
+Would you like the script to add a log of everytime someone sends an e-mail 
+to one of your member's auto responders?  Your member's will then be able to view 
+the name, e-mail address, date and time of everyone who e-mailed their auto responders.
+
+<br><br><blockquote>
+<input type="radio" name="moptions5" value="1" checked>Yes<br>
+<input type="radio" name="moptions5" value="0">No<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 5:</b></font><br><br>
+<FONT_BODY>
+Would you like the script to send follow ups for members who have been deactivated?  This is 
+strongly recommended, so all mailing lists stay up to date, and entries do not fall behind 
+their follow up dates.
+
+<br><br><blockquote>
+<input type="radio" name="moptions6" value="1" checked>Yes<br>
+<input type="radio" name="moptions6" value="0">No<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 6:</b></font><br><br>
+<FONT_BODY>
+Would you like all mailing list entries which complete their follow up cycles, to be added 
+to an archived mailing list?  This will allow your member's to view all entries which have completed 
+their follow up cycles, and if wanted, recycle them back into the mailing list.
+
+<br><br><blockquote>
+<input type="radio" name="moptions7" value="1" checked>Yes<br>
+<input type="radio" name="moptions7" value="0">No<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 7:</b></font><br><br>
+<FONT_BODY>
+Would you like the script to keep a log of every follow up message which is sent out?  Your 
+member's will then be able to view very detailed logs, showing exactly who was sent what message, and when.
+
+<br><br><blockquote>
+<input type="radio" name="moptions8" value="1" checked>Yes<br>
+<input type="radio" name="moptions8" value="0">No<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 8:</b></font><br><br>
+<FONT_BODY>
+When the script sends an e-mail message, would you like it to automatically wrap 
+lines that are over 60 characters long?  This ensures that every e-mail message sent will 
+be viewed perfectly by everyone.
+
+<br><br><blockquote>
+<input type="radio" name="moptions9" value="1" checked>Yes<br>
+<input type="radio" name="moptions9" value="0">No<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 9:</b></font><br><br>
+<FONT_BODY>
+Please select which format you would like all dates displayed in.
+
+<br><br><blockquote>
+<input type="radio" name="moptions4" value="1" checked>11/21/00<br>
+<input type="radio" name="moptions4" value="2">Nov-21-2000<br>
+<input type="radio" name="moptions4" value="3">November 21, 2000<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 10:</b></font><br><br>
+<FONT_BODY>
+If someone sends an e-mail message to an auto responder which does not exist, 
+what e-mail address would you like that message forwarded to?
+
+<br><br><blockquote>Dump E-Mail Address:</font><input type="text" name="dump_email" size=25><br>
+</blockquote><br>
+
+<FONT_BODY><b>Question 11:</b></font><br><br>
+<FONT_BODY>
+When your member's fill out the support form located in the Member Control Panel, which e-mail 
+address would you like the support request sent to?
+
+<br><br><blockquote>Support E-Mail Address:</font><input type="text" name="support_email" size=25><br>
+</blockquote><br>
+
+<FONT_BODY><b>Question 12:</b></font><br><br>
+<FONT_BODY>
+How many different domain names would you like your member's to create auto responders on?  All domain names 
+must be hosted on the same server.  For example, if you have three different domain names, all hosted on your one server, 
+you would enter 3.
+
+<br><br><blockquote>
+Number of Domain Names:</font> <input type="text" name="domains" size=5>
+</blockquote></font><br>
+
+
+<FONT_HEADER E-Mail Information>
+
+<FONT_BODY><b>Question 1:</b></font><br><br>
+<FONT_BODY>
+Which method would you like to use to send e-mail with the script?  There 
+are three methods to choose from which are:
+
+<br><br><b>Sendmail: </b> This uses the well known Sendmail program on your server 
+to send all e-mail.  This is the standard method which many CGI scripts use to send e-mail.
+
+<br><br><b>SMTP Server: </b> This uses your server's SMTP mail server to send e-mail.  
+It will remotley connect to the SMTP server, and send all e-mail through it, the same as 
+your e-mail client such as Microsoft Outlook would.
+
+<br><br><b>Remote DNS: </b> This is a completley different method of sending e-mail than other CGI 
+scripts use.  When sending e-mail, the script will send the message directly to the recipient's web server, 
+instead of sending the message through your web server's Sendmail program.  The main advantage of this method 
+is that your web server will never get clogged up with undeliverable messages.
+
+<br><br>
+
+We very highly recommend that you use Remote DNS.  By doing so, the script will be able to provide you and your member's 
+with many extra e-mail features such as, automatic removal of undeliverables, exactly why an e-mail could not be sent, plus 
+much more.
+
+<br><br><blockquote>
+<input type="radio" name="mailtype" value="sendmail" checked>Sendmail<br>
+<input type="radio" name="mailtype" value="smtp">SMTP Server<br>
+<input type="radio" name="mailtype" value="dns">Remote DNS<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 2:</b></font><br><br>
+<FONT_BODY>
+From below, please check who you would like the script to send an e-mail message to when a new 
+member joins your program through your newuser HTML form.
+
+<br><br><blockquote>
+<input type="checkbox" name="send_confirm" value="admin">The administrator (You)<br>
+<input type="checkbox" name="send_confirm" value="member">The new member<br>
+</blockquote></font><br>
+
+
+<FONT_HEADER Database Information>
+
+<FONT_BODY><b>Question 1:</b></font><br><br>
+<FONT_BODY>
+Which method would you like to use to store members with the script?  There 
+are two methods to choose from which are:
+
+<br><br><b>CGI: </b> This uses the cgi configurable scripts to store members.
+  This is the standard method which is compatable for all platforms.
+
+<br><br><b>MySQL: </b> This uses your MySQL database server to store members.  
+It will drop the raw member table. We recommend that you backup database manualy.
+
+<br><br>
+
+We very highly recommend that you use MySQL.  By doing so, the script will be able to provide you and your member's 
+with many future possiblities to extend this program.
+
+<br><br><blockquote>
+<input type="radio" name="dbdriver" value="cgi" checked>CGI<br>
+<input type="radio" name="dbdriver" value="mysql">MySQL<br>
+</blockquote></font><br>
+
+<FONT_BODY><b>Question 2:</b></font><br><br>
+<FONT_BODY>
+How many fields would you like your member database to contain, besides 
+the member's <i>username</i>?  For example, if you 
+wanted to store your member's name, e-mail address and password, you would enter 3.
+
+<br><br><blockquote>
+Number of Fields:</font> <input type="text" name="userfields" size=5>
+</blockquote></font><br>
+
+<FONT_HEADER Default Member Settings>
+<FONT_BODY>
+You must specify the default settings for all new members.  Below are six questions asking 
+for the default limitations for all members.
+
+<br><br><blockquote><table border=0 cellspacing=1 cellpadding=1>
+<tr>
+	<td valign=top nowrap><FONT_BODY><b>1.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many autoresponders is the member allowed to have?</font></td>
+	<td valign=top width=20%><input type="text" name="default0" size=5 value="3"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>2.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many mailing lists is the member allowed to create?</font></td>
+	<td valign=top width=20%><input type="text" name="default1" size=5 value="4"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>3.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many follow up e-mail messages, not including one for each 
+	autoresponder, is the member allowed to create?</font></td>
+	<td valign=top width=20%><input type="text" name="default2" size=5 value="15"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>4.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many follow up cycles is the member allowed to have for each mailing list?</font></td>
+	<td valign=top width=20%><input type="text" name="default3" size=5 value="5"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>5.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>How many mailings would you like to all the member to have 
+	scheduled at one time?</font></td>
+	<td valing=top width=20%><input type="text" name="default4" size=5 value="5"></td>
+</tr><tr>
+	<td valign=top nowrap><FONT_BODY><b>6.) </b></font></td>
+	<td valign=top width=80%><FONT_BODY>What the is maximum number of e-mail messages the member is 
+	allowed to send to the mailing lists, in one day?</font></td>
+	<td valing=top width=20%><input type="text" name="default5" size=8 value="5000"></td>
+</tr></table></blockquote><br>
+
+
+<FONT_HEADER Automatic Update Information>
+
+<FONT_BODY><b>Question 1:</b></font><br><br>
+<FONT_BODY>
+Would you like the script to automatically backup your member database at set times?  You will 
+be able to choose whether the script backs up your member database, daily, weekly, biweekly, or monthly.
+
+<br><br><blockquote>
+<input type="radio" name="auto_options0" value="1" checked>Yes<br>
+<input type="radio" name="auto_options0" value="0">No
+</blockquote></font><br>
+
+<center><hr width=80%><br><FONT_BODY>
+<input type="submit" value="Proceed to Next Step">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>

@@ -1,0 +1,41 @@
+<HEADER>
+<TABLE_HEADER Export Mailing List>
+<form action="~script_name~?menu=lists&action=export&type=text" method="POST">
+<input type="hidden" name="action" value="getlist">
+<input type="hidden" name="action2" value="export">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+
+<FONT_BODY>
+From here you can easily export the selected mailing list in to a text delimited file.  
+Please select what you would like to use as a delimter for the text delimted file.  The 
+results of the export, will be printed to the screen.
+</font><br><br><LINE>
+
+<FONT_HEADER Export Mailing List>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=70%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr><tr>
+	<td nowrap valign=top><FONT_BODY>Delimter to Use:</font></td>
+	<td nowrap valign=top><FONT_BODY>
+		<input type="radio" name="delim" value="tab" checked>Tab<br>
+		<input type="radio" name="delim" value="other">Other: </font>
+		<input type="text" name="delim_other" size=5>
+	</font></td>
+</tr></table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Export Mailing List">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+
+
+
+ 

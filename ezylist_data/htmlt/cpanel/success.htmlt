@@ -1,0 +1,9 @@
+<HEADER>
+<TABLE_HEADER Control Panel v~SCRIPT_VERSION~>
+
+<FONT_HEADER Success!>
+<FONT_BODY><blockquote>
+~success_message~
+</font></blockquote>
+
+<FOOTER>

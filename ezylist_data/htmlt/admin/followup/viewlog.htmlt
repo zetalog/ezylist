@@ -1,0 +1,35 @@
+<HEADER>
+<TABLE_HEADER View Follow Up Logs>
+<form action="~script_name~?menu=followup&action=viewlogs2" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+
+<FONT_BODY>
+From here you can view a detailed log of all follow up messages which were 
+send out on a particular date.  This will also show you all errors which occured 
+when sending the follow up messages on the selected date.  To continue, please 
+either select one of the seven days from below, or specify a date below.
+</font><br><br><LINE>
+
+<FONT_HEADER Select Date>
+<FONT_BODY>
+Below shows the last seven days for which follow ups occured on your account.  
+You may select one of the below dates, and click on the <i>View Follow Up Logs</i> 
+button to view logs for that date.
+
+<br><br><blockquote>
+	<REPRODUCE date date_format><input type="radio" name="date" value="~date~">~date_format~<br></REPRODUCE>
+</blockquote></font><br>
+
+<FONT_BODY>
+If wanted, you may also specify a date from below, and click on the <i>View Follow Up Logs</i> button 
+to view logs for that date.
+
+<br><br><blockquote>~date_html~</blockquote></font><br><br>
+
+<center><FONT_BODY>
+<input type="submit" value="View Follow Up Logs">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>

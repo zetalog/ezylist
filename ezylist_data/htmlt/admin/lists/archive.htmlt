@@ -1,0 +1,63 @@
+<HEADER>
+<TABLE_HEADER Manage Archived Lists>
+<form action="~script_name~?menu=lists&action=archive2" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+
+
+<FONT_BODY>
+From here you can manage your archived lists.  Your archived lists contain 
+all of the entries which have already completed their follow up cycle.  You 
+can either delete or recycle the below entries by selecting the entries below, 
+and clicking on the appropriate submit button.
+
+<br><br>
+
+When your recycle an entry, the entry is placed back into the mailing list, and 
+the follow up cycle will begin again.  Once the follow up cycle has been completed, for 
+a second time, the entry will be placed back here, into the archived list.
+</font><br><br><LINE>
+
+<FONT_HEADER Current Archived Entries>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</table></blockquote><br><br>
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+	<td align=left width=30% nowrap><FONT_BODY>
+	<IF prev><a href="~script_name~?menu=lists&action=archive&username=~username~&listid=~list_id~&start=~start_previous~">&lt; Previous</a> | </IF>
+	<IF next><a href="~script_name~?menu=lists&action=archive&username=~username~&listid=~list_id~&start=~start_next~">Next &gt;</a></IF>
+	</font></td>
+
+	<td align=right width=70% nowrap><FONT_BODY> <b>Quick Jump:</b> | ~jumplinks~</font></td> 
+</tr></table>
+
+<table border=1 cellspacing=2 cellpadding=2 width=100%>
+<tr bgcolor="#F0F0F0">
+	<th><FONT_BODY>&nbsp;</font></th>
+	<th><FONT_BODY>ID#</font></th>
+<REPRODUCE listfield>
+	<th><FONT_BODY>~listfield_titlecase~</font></th>
+</REPRODUCE></tr>
+
+<REPRODUCE list_entry>
+<tr>
+	~list_entry~
+</tr>
+</REPRODUCE>
+</table><br><br>
+
+<center><FONT_BODY>
+<input type="submit" name="submit" value="Delete Selected Entries">
+<input type="submit" name="submit" value="Recycle Selected Entries">
+</font></center><br>
+
+<FOOTER>
+

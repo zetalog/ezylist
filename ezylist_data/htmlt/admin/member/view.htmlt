@@ -1,0 +1,45 @@
+<HEADER>
+<TABLE_HEADER View Member>
+
+<FONT_BODY>
+From here you can view any member in your database.  Below is the selected member's 
+profile, additional information, and the auto responders and mailing lists which they 
+have created in their account.
+</font><br><br><LINE>
+
+<FONT_HEADER Member Profile>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<REPRODUCE userfield userinfo>
+<tr>
+	<td nowrap><FONT_BODY>~userfield_titlecase~:</font></td>
+	<td nowrap><FONT_BODY>~userinfo~</font></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<FONT_HEADER Current Mailing Lists>
+<include admin/list_info.htmlt>
+
+<FONT_HEADER Current Auto Responders>
+<table border=1 cellspacing=1 cellpadding=2 width=90% align=center>
+<tr bgcolor="#A3A9B7">
+	<th width=100% colspan=3>
+	<font face="verdana" size=3>Current Auto Responders</font></th>
+</tr><tr bgcolor="#F0F0F0">
+	<th><FONT_BODY>Auto Responder</font></th>
+	<th><FONT_BODY>Mailing List</font></th>
+	<th><FONT_BODY>Forwarding Address</font></th>
+</tr>
+<REPRODUCE ar_email ar_list ar_forward>
+<tr>
+	<td nowrap><FONT_BODY>~ar_email~</font></td>
+	<td nowrap><FONT_BODY>~ar_list~</font></td>
+	<td nowrap><FONT_BODY>~ar_forward~</font></td>
+</tr>
+</REPRODUCE>
+</table><br>
+
+<FONT_HEADER Current Advertisements>
+<include admin/ad_info.htmlt>
+
+<FOOTER>

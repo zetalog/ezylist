@@ -1,0 +1,39 @@
+<HEADER>
+<TABLE_HEADER Delete Entry>
+<form action="~script_name~?menu=lists&action=edit_delete" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+<input type="hidden" name="entry_id" value="~entry_id~">
+
+<FONT_BODY>
+From here you can delete the selected entry from the mailing list, <b>~listname~</b>.  This will 
+completley remove the entry from the mailing list, and all follow ups will immediatley stop.  Below 
+shows the selected entries current information.  To delete the entry, please click on the 
+<i>Delete Entry</i> button below.
+</font><br><br><LINE>
+
+<FONT_HEADER Entry Information>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Entry ID#:</font></td>
+	<td nowrap><FONT_BODY>~entry_id~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Next Follow Up Date:</font></td>
+	<td nowrap><FONT_BODY>~nextdate~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Message Sent on Next Follow Up:</font></td>
+	<td nowrap><FONT_BODY>~next_message~</font></td>
+</tr>
+
+<REPRODUCE listfield listinfo>
+<tr>
+	<td nowrap><FONT_BODY>~listfield_titlecase~:</font></td>
+	<td nowrap><FONT_BODY>~listinfo~</font></td>
+</tr>
+</REPRODUCE>
+</table></blockquote><br>
+
+<center><FONT_BODY><input type="submit" value="Delete Entry"></font></center><br>
+
+<FOOTER>
+

@@ -1,0 +1,4 @@
+# Perl scripts are binaries
+
+*.pl -k 'b'
+*.cgi -k 'b'

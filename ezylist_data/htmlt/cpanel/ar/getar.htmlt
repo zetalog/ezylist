@@ -1,0 +1,43 @@
+<HEADER>
+<TABLE_HEADER ~title~ - Select Auto Responder>
+<form action="~script_name~?~query_string~" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="action" value="getar">
+
+<FONT_BODY>
+The following action requires a auto responder.  To continue, please select a auto responder from below.  
+Once done, click on the <i>~title~</i> button below.
+</font><br><br><LINE>
+
+<FONT_HEADER Select Mailing List>
+<blockquote><table border=0 cellspacing=1 cellpadding=1 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr></table></blockquote><br>
+
+<table border=1 cellspacing=1 cellpadding=2 width=90% align=center>
+<tr>
+	<th width=100% colspan=3 bgcolor="#008000">
+	<font face="Times New Roman" size=3 color="#FFFFFF">Current Auto Responders</font></th>
+</tr><tr>
+	<th bgcolor="#000000">&nbsp;</th>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">Auto Responder</font></th>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">Mailing List</font></th>
+</tr>
+<REPRODUCE ar listname>
+<tr>
+	<th nowrap><input type="radio" name="ar" value="~ar~"></th>
+	<td nowrap><FONT_BODY>~ar~</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr>
+</REPRODUCE>
+</table><br>
+
+<br><center><FONT_BODY>
+<input type="submit" value="~title~">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+

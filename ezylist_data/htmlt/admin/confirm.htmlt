@@ -1,0 +1,27 @@
+
+<HEADER>
+
+<TABLE_HEADER ~page_title~>
+
+<form action="~script_name~?~query_string~" method="POST">
+<input type="hidden" name="confirm_data" value="~confirm_data~">
+<input type="hidden" name="action" value="~action~">
+<table border=2 cellspacing=2 cellpadding=1 bgcolor="#BBBBBB" align=center width=70%>
+<tr>
+	<td width=100%><center>
+	<font face="verdana" size=3 color="#000000"><b>Confirm Action</b></font><br>
+	<hr width=90%><br>
+			
+	<FONT_BODY>~confirm_text~
+	<br><br>
+	
+	<input type="radio" name="confirm" value="1">Yes 
+	<input type="radio" name="confirm" value="0" checked>No<br>
+
+	<hr width=90%><br>
+	
+	<input type="submit" value="Submit">
+	</center></td>
+</tr></table>
+
+<FOOTER>

@@ -1,0 +1,41 @@
+<HEADER>
+<TABLE_HEADER Create Auto Responder>
+<form action="~script_name~?menu=ar&action=create" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="action" value="create">
+
+<FONT_BODY>
+From here you can create a new auto responder for a member.  To do this, enter the 
+name of the new auto responder below, specify which mailing list to attach it to, and 
+specify the e-mail address which you would like all messages forwarded to.  
+When someone sends an e-mail to the auto responder, the script will add them to the 
+mailing list which you attach to the auto responder.
+</font><br><br><LINE>
+
+<FONT_HEADER Auto Responder Info>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Auto Responder to Create:</font></td>
+	<td nowrap>
+		<input type="text" name="ar_username" size=15> <FONT_BODY>@</font> 
+		<select name="ar_domain">~domain_options~</select>
+	</td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List to Attach To:</font></td>
+	<td nowrap><select name="attach_list">~list_options~</select></td>
+</tr><tr>
+	<td nowrap valign=top><FONT_BODY>Forwarding E-Mail Address:<br>(leave blank if none)</font></td>
+	<td nowrap valign=top><input type="text" name="forward" size=25></td>
+</tr></table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Create Auto Responder">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+
+		

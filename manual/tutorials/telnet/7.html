@@ -1,0 +1,53 @@
+
+<html>
+<head>
+	<title>User Manual - Web Site Replicator v1.0 - Created by eZyScripts.Com</title>
+</head>
+
+<body>
+<center><font face="times new roman" size=5><b>Web Site Replicator v1.0</b></font><br>
+<font face="arial" size=2><b>Created by Lv 'Zetalog' Zheng of <a href="http://www.ezyscripts.com/">eZyScripts.Com</a></b></font><br>
+</center><br><br>
+
+<font face="arial" size=3><b>Telnet Tutorial - Viewing the Contents of a File</b></font><br><br>
+
+<blockquote><font face="arial" size=2>
+In telnet, there is a very easy way to view the contents of a file on your web server.  This is called the
+<tt>cat</tt> command.  To use the <tt>cat</tt> command, at the telnet prompt type:
+
+<br><blockquote><tt>
+cat FILENAME<br>
+cat script.cgi
+</tt></blockquote><br>
+
+This will display, on the telnet screen, the contents of <tt>FILENAME</tt>.  Unfortunately, some files are a little too 
+large for this, or what happens if you only want to see the first 30 lines of the file?  There's another UNIX command called 
+<tt>head</tt> which will only print out the specified number of lines starting at the beginning of the file.  The basic syntax 
+for the <tt>head</tt> command is:
+
+<br><blockquote><tt>
+head -n FILENAME<br>
+head -30 script.cgi
+</tt></blockquote><br>
+
+This will display the first <tt>n</tt> lines of the file <tt>FILENAME</tt>.  If <tt>-n</tt> is left out, 
+only the first 20 lines will be displayed.  Now what happens if you want to view only the bottom 20 lines of 
+a file?  Once again, there's a UNIX command which will do this for you.  It's called the <tt>tail</tt> command.  
+The basic syntax of the <tt>tail</tt> command is:
+
+<br><blockquote><tt>
+tail -n FILENAME<br>
+tail -20 script.cgi
+</tt></blockquote><br>
+
+This will display the last <tt>n</tt> lines of the file <tt>FILENAME</tt>.  If <tt>-n</tt> is omitted, only the 
+last 15 lines will be displayed.
+</font></blockquote><br>
+
+<center><font face="verdana" size=3><b>
+<a href="6.html"> &lt; Prev</a> | 
+<a href="8.html"> Next &gt;</a>
+</b></font></center>
+
+</body>
+</html>

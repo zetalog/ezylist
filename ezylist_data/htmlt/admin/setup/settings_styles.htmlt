@@ -1,0 +1,123 @@
+<HEADER>
+<TABLE_HEADER Style Settings>
+<form action="~script_name~?menu=setup&action=settings_styles" method="POST">
+<input type="hidden" name="action" value="update">
+
+<FONT_BODY>
+From here you can change the appearance of your Member Control Panel.  You can change 
+things such as the font, and color scheme of your Member Control Panel.  Feel free to 
+change any of the information below, and once done click on the <i>Update Settings</i> 
+button to save the changes.
+</font><br><br><LINE>
+
+<FONT_HEADER Header Table Style>
+<FONT_BODY>
+From here you can change the appearance of all header tables in your Member Control Panel.  The 
+header table is what is shown in the blue box at the top of the page which says <i>Style Settings</i>.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Background Color:</font></td>
+	<td nowrap><input type="text" name="table_bgcolor" size=10 value="~TABLE_BGCOLOR~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Face:</font></td>
+	<td nowrap><input type="text" name="table_font_face" size=15 value="~TABLE_FONT_FACE~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Size:</font></td>
+	<td nowrap><input type="text" name="table_font_size" size=8 value="~TABLE_FONT_SIZE~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Color:</font></td>
+	<td nowrap><input type="text" name="table_font_color" size=10 value="~TABLE_FONT_COLOR~"></td>
+</tr></table></blockquote><br><br>
+
+
+<FONT_HEADER Header Font Style>
+<FONT_BODY>
+From here you can change the appearance of the header font in your Member Control Panel.  The 
+header font is the large font to the several sections on each page.  For example, just above there 
+is a header font which says, <i>Header Font Style</i>.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Font Face:</font></td>
+	<td nowrap><input type="text" name="header_font_face" size=15 value="~HEADER_FONT_FACE~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Size:</font></td>
+	<td nowrap><input type="text" name="header_font_size" size=8 value="~HEADER_FONT_SIZE~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Color:</font></td>
+	<td nowrap><input type="text" name="header_font_color" size=10 value="~HEADER_FONT_COLOR~"></td>
+</tr></table></blockquote><br><br>
+
+
+<FONT_HEADER Body Font Style>
+<FONT_BODY>
+From here you can change the appearance of the body font for your Member Control Panel.  The body 
+font is the exact text you are reading now.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Font Face:</font></td>
+	<td nowrap><input type="text" name="body_font_face" size=15 value="~BODY_FONT_FACE~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Size:</font></td>
+	<td nowrap><input type="text" name="body_font_size" size=8 value="~BODY_FONT_SIZE~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Color:</font></td>
+	<td nowrap><input type="text" name="body_font_color" size=10 value="~BODY_FONT_COLOR~"></td>
+</tr></table></blockquote><br><br>
+
+
+<FONT_HEADER Main Menu Style>
+<FONT_BODY>
+From here you can change the appearance of the menus in your Member Control Panel.  The menus are located in the 
+left hand side of the Member Control Panel
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Background Color:</font></td>
+	<td nowrap><input type="text" name="menu_bgcolor" size=10 value="~MENU_BGCOLOR~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Face:</font></td>
+	<td nowrap><input type="text" name="menu_font_face" size=15 value="~MENU_FONT_FACE~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Size:</font></td>
+	<td nowrap><input type="text" name="menu_font_size" size=8 value="~MENU_FONT_SIZE~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Color:</font></td>
+	<td nowrap><input type="text" name="menu_font_color" size=10 value="~MENU_FONT_COLOR~"></td>
+</tr></table></blockquote><br><br>
+
+
+<FONT_HEADER Sub Menu Style>
+<FONT_BODY>
+From here you can change the appearance of the sub menus of your Member Control Panel.  Sub menus are 
+the small menus which are displayed when you click on one of the main menus of the Member Control Panel.
+</font><br><br>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Background Color:</font></td>
+	<td nowrap><input type="text" name="submenu_bgcolor" size=10 value="~SUBMENU_BGCOLOR~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Face:</font></td>
+	<td nowrap><input type="text" name="submenu_font_face" size=15 value="~SUBMENU_FONT_FACE~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Size:</font></td>
+	<td nowrap><input type="text" name="submenu_font_size" size=8 value="~SUBMENU_FONT_SIZE~"></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Font Color:</font></td>
+	<td nowrap><input type="text" name="submenu_font_color" size=10 value="~SUBMENU_FONT_COLOR~"></td>
+</tr></table></blockquote><br><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Update Settings">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>
+

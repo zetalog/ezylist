@@ -1,0 +1,24 @@
+<HEADER>
+<TABLE_HEADER Manage Domains>
+<form action="~script_name~?menu=setup&action=settings_domains" method="POST">
+<input type="hidden" name="action" value="update">
+
+<FONT_BODY>
+From here you can manage the domains which your member's are allowed to create auto responders on.  
+You may delete any of the below domains by selecting the domain, and clicking on the <i>Delete Domain</i> 
+button.  You may add a new domain by entering the domain name below, and clicking on the 
+<i>Add Domain Name</i> button.
+</font><br><br><LINE>
+
+<FONT_HEADER Current Domains>
+<blockquote><select name="domain" size=5>
+<REPRODUCE domain><option>~domain~</REPRODUCE>
+</select></blockquote><br>
+
+<center><FONT_BODY><input type="submit" name="submit" value="Delete Domain"></font></center><br><br>
+
+<FONT_HEADER Add Domain>
+<blockquote><FONT_BODY>Domain Name:</font> <input type="text" name="domain_name" size=30></blockquote><br><br>
+<center><FONT_BODY><input type="submit" name="submit" value="Add Domain"></font><br>
+
+<FOOTER>

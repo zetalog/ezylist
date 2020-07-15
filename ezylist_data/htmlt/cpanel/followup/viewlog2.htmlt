@@ -1,0 +1,60 @@
+<HEADER>
+<TABLE_HEADER View Follow Up Logs>
+<form action="~script_name~?menu=followup&action=viewlogs_error" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+<input type="hidden" name="date" value="~days~">
+
+<FONT_BODY>
+Below is a list of all follow up messages which were sent out to the selected 
+mailing list, on the specified date.  You may view all errors which occured on this 
+date, by clicking on the <i>View Follow Up Errors</i> button below.
+</font><br><br><LINE>
+
+<center><FONT_BODY><input type="submit" value="View Follow Up Errors"></font></center><br><br>
+
+<FONT_HEADER Follow Up Logs>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Date:</font></td>
+	<td nowrap><FONT_BODY>~date~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Total Messages Sent:</font></td>
+	<td nowrap><FONT_BODY>~total_sent~</font></td>
+</table></blockquote><br><br>
+
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+	<td align=left width=30% nowrap><FONT_BODY>
+	<IF prev><a href="~script_name~?menu=followup&action=viewlogs2&username=~username~&listid=~list_id~,~days~&start=~start_previous~">&lt; Previous</a> | </IF>
+	<IF next><a href="~script_name~?menu=followup&action=viewlogs2&username=~username~&listid=~list_id~,~days~&start=~start_next~">Next &gt;</a></IF>
+	</font></td>
+
+	<td align=right width=70% nowrap><FONT_BODY> <b>Quick Jump:</b> | ~jumplinks~</font></td> 
+</tr></table>
+
+<table border=1 cellspacing=2 cellpadding=2 width=100%>
+<tr>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">ID#</font></th>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">Message Name</font></th>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">Follow Up Cycle</font></th>
+<REPRODUCE listfield>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">~listfield_titlecase~</font></th>
+</REPRODUCE></tr>
+
+<REPRODUCE list_entry>
+<tr>
+	~list_entry~
+</tr>
+</REPRODUCE>
+</table><br><br>
+
+<FOOTER>
+

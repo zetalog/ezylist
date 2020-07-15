@@ -1,0 +1,42 @@
+<HEADER>
+<TABLE_HEADER Edit Entry>
+<form action="~script_name~?menu=lists&action=edit_edit" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+<input type="hidden" name="entry_id" value="~entry_id~">
+<input type="hidden" name="cycle" value="~cycle~">
+
+<FONT_BODY>
+From here you can easily edit the selected entry from the mailing list, <b>~listname~</b>.  Below 
+is the selected entries current information.  Feel free to make any needed changes to the form below, 
+and once done, click on the <i>Edit Entry</i> button below to save the changes.
+</font><br><br><LINE>
+
+<FONT_HEADER Entry Information>
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Entry ID#:</font></td>
+	<td nowrap><FONT_BODY>~entry_id~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Next Follow Up Date:</font></td>
+	<td nowrap>~nextdate_html~</td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Message Sent on Next Follow Up:</font></td>
+	<td nowrap><select name="next_message">~message_options~</select></td>
+</tr>
+
+<REPRODUCE listfield listinfo> 
+<tr>
+	<td nowrap><FONT_BODY>~listfield_titlecase~:</font></td>
+	<td nowrap><input type="text" name="~listfield~" value="~listinfo~" size=30></td>
+</tr>
+</REPRODUCE>
+
+</table></blockquote><br>
+
+<center><FONT_BODY>
+<input type="submit" value="Edit Entry">
+<input type="reset" value="Reset Form">
+</font></center><br>
+
+<FOOTER>

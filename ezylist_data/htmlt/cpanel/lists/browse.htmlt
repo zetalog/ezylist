@@ -1,0 +1,62 @@
+<HEADER>
+<TABLE_HEADER Browse Mailing List>
+<form action="~script_name~?menu=lists&action=edit2" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+
+<FONT_BODY>
+From here you can browse the mailing list, <b>~listname~</b>.  You can only view 20 entries at a time.  
+To view more entries, please click on either the <i>Next</i> or <i>Previous</i> button below.  You 
+may edit, delete or view any entry in your mailing list by selecting the entry, and clicking on the 
+appropriate submit button below.
+</font><br><br><LINE>
+
+<FONT_HEADER Browse Mailing List>
+
+<blockquote><table border=0 cellspacing=1 cellpadding=2 width=80%>
+<tr>
+	<td nowrap><FONT_BODY>Username:</font></td>
+	<td nowrap><FONT_BODY>~username~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Mailing List:</font></td>
+	<td nowrap><FONT_BODY>~listname~</font></td>
+</tr><tr>
+	<td nowrap><FONT_BODY>Subscribers:</font></td>
+	<td nowrap><FONT_BODY>~subscribers~</font></td>
+</table></blockquote><br><br>
+
+<table border=0 cellspacing=0 cellpadding=0 width=100%>
+<tr>
+	<td align=left width=30% nowrap><FONT_BODY>
+	<IF prev><a href="~script_name~?menu=lists&action=browse&username=~username~&listid=~list_id~&start=~start_previous~">&lt; Previous</a> | </IF>
+	<IF next><a href="~script_name~?menu=lists&action=browse&username=~username~&listid=~list_id~&start=~start_next~">Next &gt;</a></IF>
+	</font></td>
+
+	<td align=right width=70% nowrap><FONT_BODY> <b>Quick Jump:</b> | ~jumplinks~</font></td> 
+</tr></table>
+
+
+<table border=1 cellspacing=2 cellpadding=2 width=100%>
+<tr>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">&nbsp;</font></th>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">ID#</font></th>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">Next Follow Up Date</font></th>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">Next Follow Up Message</font></th>
+<REPRODUCE listfield>
+	<th bgcolor="#000000"><FONT_BODY><font color="#FFFFFF">~listfield_titlecase~</font></th>
+</REPRODUCE></tr>
+
+<REPRODUCE list_entry>
+<tr>
+	~list_entry~
+</tr>
+</REPRODUCE>
+</table><br><br>
+
+<center><FONT_BODY>
+<input type="submit" name="submit" value="Edit Entry">
+<input type="submit" name="submit" value="Delete Entry">
+<input type="submit" name="submit" value="View Entry">
+</font></center><br>
+
+<FOOTER>

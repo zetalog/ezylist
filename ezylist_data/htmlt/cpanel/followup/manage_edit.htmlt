@@ -1,0 +1,28 @@
+<HEADER>
+<TABLE_HEADER Edit Follow Up Cycle>
+<form action="~script_name~?menu=followup&action=manage_edit" method="POST">
+<input type="hidden" name="username" value="~username~">
+<input type="hidden" name="list_id" value="~list_id~">
+<input type="hidden" name="followup_id" value="~followup_id~">
+
+<FONT_BODY>
+From here you can edit the selected follow up cycle.  Below is the cycle's current information.  
+Please make the appropriate changes below, and once done, click on the <i>Edit Follow Up Cycle</i> 
+button below to save the changes.
+
+<br><br>
+
+<font color="#CC0000"><b>NOTE:</b></font> No changes will be made to the mailing list by editing 
+the follow up cycle.
+</font><br><br><LINE>
+
+<FONT_HEADER Follow Up Cycle>
+<blockquote>
+<input type="text" name="days" size=5 value="~days~"> <FONT_BODY> days after the previous follow up cycle, 
+send the </font> <select name="message">~message_options~</select> <FONT_BODY> e-mail message 
+to the subscriber.
+</font></blockquote><br>
+
+<center><FONT_BODY><input type="submit" name="submit" value="Edit Follow Up Cycle"></font></center>
+
+<FOOTER>
